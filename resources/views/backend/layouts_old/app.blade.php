@@ -44,8 +44,8 @@
         @include('includes.partials.logged-in-as')
 
         <div class="wrapper">
-            @include('backend.includes.header')
-            @include('backend.includes.sidebar')
+            @include('backend.includes.header_old')
+            @include('backend.includes.sidebar_old')
 
             <!-- Content Wrapper. Contains page content -->
             <div class="content-wrapper">

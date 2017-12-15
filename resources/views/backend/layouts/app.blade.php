@@ -1,76 +1,105 @@
-<!doctype html>
-<html class="no-js" lang="{{ config('app.locale') }}">
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
+        <meta charset="utf-8" />
+        <title>Color Admin | Dashboard</title>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+        <meta content="" name="description" />
+        <meta content="" name="author" />
 
-        <title>@yield('title', app_name())</title>
-
-        <!-- Meta -->
-        <meta name="description" content="@yield('meta_description', 'Default Description')">
-        <meta name="author" content="@yield('meta_author', 'Anthony Rappa')">
         @yield('meta')
 
         <!-- Styles -->
         @yield('before-styles')
 
-        <!-- Check if the language is set to RTL, so apply the RTL layouts -->
-        <!-- Otherwise apply the normal LTR layouts -->
-        @langRTL
-            {{ Html::style(getRtlCss(mix('css/backend.css'))) }}
-        @else
-            {{ Html::style(mix('css/backend.css')) }}
-        @endif
+        <!-- ================== BEGIN BASE CSS STYLE ================== -->
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+        <link href="{{ URL::to('/') }}/assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css" rel="stylesheet" />
+        <link href="{{ URL::to('/') }}/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="{{ URL::to('/') }}/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="{{ URL::to('/') }}/assets/css/animate.min.css" rel="stylesheet" />
+        <link href="{{ URL::to('/') }}/assets/css/style.min.css" rel="stylesheet" />
+        <link href="{{ URL::to('/') }}/assets/css/style-responsive.min.css" rel="stylesheet" />
+        <link href="{{ URL::to('/') }}/assets/css/theme/default.css" rel="stylesheet" id="theme" />
+        <!-- ================== END BASE CSS STYLE ================== -->
+
+        <!-- ================== BEGIN PAGE LEVEL STYLE ================== -->
+        <link href="{{ URL::to('/') }}/assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" />
+        <link href="{{ URL::to('/') }}/assets/plugins/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" />
+        <link href="{{ URL::to('/') }}/assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" />
+        <link href="{{ URL::to('/') }}/assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" />
+        <!-- ================== END PAGE LEVEL STYLE ================== -->
 
         @yield('after-styles')
 
-        <!-- Html5 Shim and Respond.js IE8 support of Html5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        {{ Html::script('https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js') }}
-        {{ Html::script('https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js') }}
-        <![endif]-->
-
+        <!-- ================== BEGIN BASE JS ================== -->
+        <script src="{{ URL::to('/') }}/assets/plugins/pace/pace.min.js"></script>
+        <!-- ================== END BASE JS ================== -->
         <!-- Scripts -->
         <script>
             window.Laravel = <?php echo json_encode([
                 'csrfToken' => csrf_token(),
             ]); ?>
         </script>
+
     </head>
-    <body class="skin-{{ config('backend.theme') }} {{ config('backend.layout') }}">
-        @include('includes.partials.logged-in-as')
 
-        <div class="wrapper">
+    <body>
+        <!-- begin #page-loader -->
+        <div id="page-loader" class="fade in"><span class="spinner"></span></div>
+        <!-- end #page-loader -->
+
+        <!-- begin #page-container -->
+        <div id="page-container" class="fade page-sidebar-fixed page-header-fixed">
+
+            <!-- begin #header -->
             @include('backend.includes.header')
+            <!-- end #header -->
+
+            <!-- begin #sidebar -->
             @include('backend.includes.sidebar')
+            <!-- end #sidebar -->
 
-            <!-- Content Wrapper. Contains page content -->
-            <div class="content-wrapper">
-                <!-- Content Header (Page header) -->
-                <section class="content-header">
-                    @yield('page-header')
+            <!-- begin #content -->
+            <div id="content" class="content">
+                @yield('content')
+            </div>
+            <!-- end #content -->
 
-                    {{-- Change to Breadcrumbs::render() if you want it to error to remind you to create the breadcrumbs for the given route --}}
-                    {!! Breadcrumbs::renderIfExists() !!}
-                </section>
-
-                <!-- Main content -->
-                <section class="content">
-                    @include('includes.partials.messages')
-                    @yield('content')
-                </section><!-- /.content -->
-            </div><!-- /.content-wrapper -->
-
-            @include('backend.includes.footer')
-        </div><!-- ./wrapper -->
+        </div>
 
         <!-- JavaScripts -->
         @yield('before-scripts')
-        {{ Html::script(mix('js/backend.js')) }}
-        <script type="text/javascript" src="{!! asset('js/custom/custom.js') !!}"></script>
+        <!-- ================== BEGIN BASE JS ================== -->
+        <script src="{{ URL::to('/') }}/assets/plugins/jquery/jquery-1.9.1.min.js"></script>
+        <script src="{{ URL::to('/') }}/assets/plugins/jquery/jquery-migrate-1.1.0.min.js"></script>
+        <script src="{{ URL::to('/') }}/assets/plugins/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+        <script src="{{ URL::to('/') }}/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <!--[if lt IE 9]>
+        <script src="{{ URL::to('/') }}/assets/crossbrowserjs/html5shiv.js"></script>
+        <script src="{{ URL::to('/') }}/assets/crossbrowserjs/respond.min.js"></script>
+        <script src="{{ URL::to('/') }}/assets/crossbrowserjs/excanvas.min.js"></script>
+        <![endif]-->
+        <script src="{{ URL::to('/') }}/assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="{{ URL::to('/') }}/assets/plugins/jquery-cookie/jquery.cookie.js"></script>
+        <!-- ================== END BASE JS ================== -->
+
+        <!-- ================== BEGIN PAGE LEVEL JS ================== -->
+        <script src="{{ URL::to('/') }}/assets/plugins/gritter/js/jquery.gritter.js"></script>
+        <script src="{{ URL::to('/') }}/assets/plugins/flot/jquery.flot.min.js"></script>
+        <script src="{{ URL::to('/') }}/assets/plugins/flot/jquery.flot.time.min.js"></script>
+        <script src="{{ URL::to('/') }}/assets/plugins/flot/jquery.flot.resize.min.js"></script>
+        <script src="{{ URL::to('/') }}/assets/plugins/flot/jquery.flot.pie.min.js"></script>
+        <script src="{{ URL::to('/') }}/assets/plugins/sparkline/jquery.sparkline.js"></script>
+        <script src="{{ URL::to('/') }}/assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+        <script src="{{ URL::to('/') }}/assets/plugins/jquery-jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+        <script src="{{ URL::to('/') }}/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+        <script src="{{ URL::to('/') }}/assets/js/dashboard.min.js"></script>
+        <script src="{{ URL::to('/') }}/assets/js/apps.min.js"></script>
+        <!-- ================== END PAGE LEVEL JS ================== -->
         @yield('after-scripts')
     </body>
 </html>
