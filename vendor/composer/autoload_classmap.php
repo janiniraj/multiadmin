@@ -3552,6 +3552,7 @@ return array(
     'Tymon\\JWTAuth\\Validators\\TokenValidator' => $vendorDir . '/tymon/jwt-auth/src/Validators/TokenValidator.php',
     'Tymon\\JWTAuth\\Validators\\ValidatorInterface' => $vendorDir . '/tymon/jwt-auth/src/Validators/ValidatorInterface.php',
     'TypeError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/TypeError.php',
+    'Unisharp\\Ckeditor\\ServiceProvider' => $vendorDir . '/unisharp/laravel-ckeditor/ServiceProvider.php',
     'UserRoleSeeder' => $baseDir . '/database/seeds/Access/UserRoleSeeder.php',
     'UserTableSeeder' => $baseDir . '/database/seeds/Access/UserTableSeeder.php',
     'Webmozart\\Assert\\Assert' => $vendorDir . '/webmozart/assert/src/Assert.php',

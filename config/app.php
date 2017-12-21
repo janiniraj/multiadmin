@@ -204,6 +204,8 @@ return [
 
         Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
         App\Providers\HasherServiceProvider::class,
+
+        Unisharp\Ckeditor\ServiceProvider::class,
     ],
 
     /*
