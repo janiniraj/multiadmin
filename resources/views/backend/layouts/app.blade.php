@@ -100,6 +100,11 @@
         <script src="{{ URL::to('/') }}/assets/js/dashboard.min.js"></script>
         <script src="{{ URL::to('/') }}/assets/js/apps.min.js"></script>
         <!-- ================== END PAGE LEVEL JS ================== -->
+        <script>
+            $(document).ready(function() {
+                App.init();
+            });
+        </script>
         @yield('after-scripts')
     </body>
 </html>
