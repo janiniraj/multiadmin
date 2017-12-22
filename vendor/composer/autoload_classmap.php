@@ -271,6 +271,8 @@ return array(
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
     'CreateSessionsTable' => $baseDir . '/database/migrations/2017_04_04_131153_create_sessions_table.php',
     'CreateSocialLoginsTable' => $baseDir . '/database/migrations/2015_12_28_171741_create_social_logins_table.php',
+    'CreateTablePages' => $baseDir . '/database/migrations/2017_12_22_125657_create_table_pages.php',
+    'CreateTableSites' => $baseDir . '/database/migrations/2017_12_22_122441_create_table_sites.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
     'Creativeorange\\Gravatar\\Exceptions\\InvalidEmailException' => $vendorDir . '/creativeorange/gravatar/src/Exceptions/InvalidEmailException.php',
     'Creativeorange\\Gravatar\\Facades\\Gravatar' => $vendorDir . '/creativeorange/gravatar/src/Facades/Gravatar.php',
