@@ -6,11 +6,11 @@
     <!-- begin breadcrumb -->
     <ol class="breadcrumb pull-right">
         <li><a href="javascript:;">Home</a></li>
-        <li class="active">Edit Page & Page Content</li>
+        <li class="active">Create Page & Page Content</li>
     </ol>
     <!-- end breadcrumb -->
     <!-- begin page-header -->
-    <h1 class="page-header">Edit Page & Page Content</h1>
+    <h1 class="page-header">Create Page & Page Content</h1>
     <!-- end page-header -->
     <div class="row">
         <!-- begin col-12 -->
@@ -18,7 +18,7 @@
             <!-- begin panel -->
             <div class="panel panel-inverse">
                 <div class="panel-heading">
-                    <h4 class="panel-title">Edit Page & Page Content</h4>
+                    <h4 class="panel-title">Create Page & Page Content</h4>
                 </div>
                 <div class="panel-body">
                             {{ Form::model(null, ['route' => [$repository->getActionRoute('storeRoute')], 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'POST']) }}
