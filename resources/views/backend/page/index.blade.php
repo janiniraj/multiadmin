@@ -18,6 +18,10 @@
             <!-- begin panel -->
             <div class="panel panel-inverse">
                 <div class="panel-heading">
+                    
+                    <div class="panel-heading-btn">
+                        <a class="btn btn-xs btn-warning text-right" href="{{route($repository->adminRoutePrefix .'.'. $repository->moduleRoutes['createRoute'])}}">Create Page</a>
+                    </div>
                     <h4 class="panel-title">Page Management</h4>
                 </div>
                 <div class="panel-body">
@@ -39,7 +43,9 @@
                                         <td>{{ date('d M Y H i A', strtotime($single->updated_at)) }}</td>
                                         <td>
                                             <a href="{{route($repository->adminRoutePrefix .'.'. $repository->moduleRoutes['editRoute'], $single->id)}}" class="btn btn-xs btn-primary"><i class="fa fa-pencil" data-toggle="tooltip" data-placement="top" title="Edit"></i></a>
-                                            <a href="{{route($repository->adminRoutePrefix .'.'. $repository->moduleRoutes['deleteRoute'], $single->id)}}" onclick="confirm('Are You Sure?')" data-method="delete" data-trans-button-cancel="Cancel" data-trans-button-confirm="Delete" data-trans-title="Do you want to Delete this Item ?" class="btn btn-xs btn-danger"><i class="fa fa-times" data-toggle="tooltip" data-placement="top" title="Delete"></i></a>
+                                            
+
+                                            <?php /*<a href="{{route($repository->adminRoutePrefix .'.'. $repository->moduleRoutes['deleteRoute'], $single->id)}}" onclick="confirm('Are You Sure?')" data-method="delete" data-trans-button-cancel="Cancel" data-trans-button-confirm="Delete" data-trans-title="Do you want to Delete this Item ?" class="btn btn-xs btn-danger"><i class="fa fa-times" data-toggle="tooltip" data-placement="top" title="Delete"></i></a> */ ?>
                                         </td>
                                     </tr>
                                 @endforeach

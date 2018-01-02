@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Yajra\Datatables\Facades\Datatables;
 use App\Repositories\Page\EloquentPageRepository;
+use Route;
 
 /**
  * Class AdminPageController
@@ -57,6 +58,7 @@ class AdminPageController extends Controller
      */
     public function index()
     {
+        //dd(Route::getRoutes());
         return view($this->repository->setAdmin(true)->getModuleView('listView'))->with([
             'repository' => $this->repository
         ]);
@@ -94,7 +96,6 @@ class AdminPageController extends Controller
     public function edit($id, Request $request)
     {
         $page = $this->repository->findOrThrowException($id);
-
         return view($this->repository->setAdmin(true)->getModuleView('editView'))->with([
             'item'          => $page,
             'repository'    => $this->repository

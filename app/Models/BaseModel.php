@@ -33,7 +33,6 @@ class BaseModel extends Model
 
         $childClass     = get_called_class();
         $model          = new $childClass;
-        $model->runActionLogger(false, 'create');
 
         return parent::query()->create($attributes);
     }
@@ -51,9 +50,7 @@ class BaseModel extends Model
      * @return bool
      */
     public function update(array $attributes = [] , array $options = [])
-    {
-        $this->runActionLogger($this, 'update');
-        
+    {        
         return parent::update($attributes);
     }
 

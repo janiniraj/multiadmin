@@ -4,6 +4,7 @@ use App\Models\Page\Page;
 use App\Models\Site\Site;
 use App\Repositories\DbRepository;
 use App\Exceptions\GeneralException;
+use Session;
 
 class EloquentPageRepository extends DbRepository implements PageRepositoryContract
 {
@@ -287,28 +288,7 @@ class EloquentPageRepository extends DbRepository implements PageRepositoryContr
     {
     	if($isCreate)
     	{
-    		$input = array_merge($input, ['user_id' => access()->user()->id]);
-    	}
-
-
-    	if(isset($input['start_date']))
-    	{
-    		$input['start_date'] = date('Y-m-d', strtotime($input['start_date']));
-    	}
-
-    	if(isset($input['end_date']))
-    	{
-    		$input['end_date'] = date('Y-m-d', strtotime($input['end_date']));
-    	}
-
-    	if(! isset($input['start_date']))
-    	{
-    		$input['start_date'] = date('Y-m-d');
-    	}
-
-    	if(! isset($input['end_date']))
-    	{
-    		$input['end_date'] = date('Y-m-d');
+    		$input = array_merge($input, ['site_id' => Session::get('siteId')]);
     	}
 
     	return $input;

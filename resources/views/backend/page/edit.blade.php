@@ -1,41 +1,58 @@
 @extends ('backend.layouts.app')
 
-@section ('title', isset($title) ? $title : 'Edit Event')
-
-@section('page-header')
-    <h1>
-        Events
-        <small>Edit</small>
-    </h1>
-@endsection
-
+@section ('title',  isset($repository->moduleTitle) ? $repository->moduleTitle. ' Management' : 'Management')
 @section('content')
-    {{ Form::model($item, ['route' => [$repository->getActionRoute('updateRoute'), $item], 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'PATCH']) }}
 
-        <div class="box box-success">
-            <div class="box-header with-border">
-                <h3 class="box-title">Event</h3>
-                    <div class="box-tools pull-right">
-                        @include('common.event.event-header-buttons', ['listRoute' => $repository->getActionRoute('listRoute'), 'createRoute' => $repository->getActionRoute('createRoute')])
-                    </div>
-            </div>
-
-            @include('common.event.form')
-            
-        </div>
-
-        <div class="box box-success">
-            <div class="box-body">
-                <div class="pull-left">
-                    {{ link_to_route($repository->getActionRoute('listRoute'), 'Cancel', [], ['class' => 'btn btn-danger btn-xs']) }}
+    <!-- begin breadcrumb -->
+    <ol class="breadcrumb pull-right">
+        <li><a href="javascript:;">Home</a></li>
+        <li class="active">Edit Page & Page Content</li>
+    </ol>
+    <!-- end breadcrumb -->
+    <!-- begin page-header -->
+    <h1 class="page-header">Edit Page & Page Content</h1>
+    <!-- end page-header -->
+    <div class="row">
+        <!-- begin col-12 -->
+        <div class="col-md-12">
+            <!-- begin panel -->
+            <div class="panel panel-inverse">
+                <div class="panel-heading">
+                    <h4 class="panel-title">Edit Page & Page Content</h4>
                 </div>
+                <div class="panel-body">
+                            {{ Form::model($item, ['route' => [$repository->getActionRoute('updateRoute'), $item], 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'PATCH']) }}
+                                <div class="form-group">
+                                    {{ Form::label('name', 'Page Name :', ['class' => 'col-lg-3 control-label']) }}
+                                    <div class="col-md-9">
+                                        {{ Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Page Name', 'required' => 'required']) }}
+                                    </div>
+                                </div>
 
-                <div class="pull-right">
-                    {{ Form::submit('Update', ['class' => 'btn btn-success btn-xs']) }}
-                </div>
-
-                <div class="clearfix"></div>
+                                <div class="form-group">
+                                    {{ Form::label('content', 'Page Content :', ['class' => 'col-lg-3 control-label']) }}
+                                    <div class="col-md-9">
+                                        {{ Form::textarea('content', null, ['class' => 'form-control page-content-editor', 'placeholder' => 'Page Content', 'required' => 'required']) }}
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="col-md-9 text-center">
+                                        {{ Form::submit('Update', ['class' => 'btn btn-sm btn-success']) }}
+                                    </div>
+                                </div>
+                            {{ Form::close() }}
+                        </div>
             </div>
+            <!-- end panel -->
         </div>
-    {{ Form::close() }}
+        <!-- end col-12 -->
+    </div>
+@endsection
+@section('after-scripts')
+    <script src="{{URL::to('/')}}/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+    <script src="{{URL::to('/')}}/vendor/unisharp/laravel-ckeditor/adapters/jquery.js"></script>
+    <script>
+        $('.page-content-editor').ckeditor();
+    </script>
 @endsection
