@@ -10,6 +10,7 @@ use App\Helpers\Frontend\Auth\Socialite;
 use App\Events\Frontend\Auth\UserLoggedIn;
 use App\Events\Frontend\Auth\UserLoggedOut;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Session;
 
 /**
  * Class LoginController.
@@ -65,6 +66,8 @@ class LoginController extends Controller
         }
 
         event(new UserLoggedIn($user));
+
+        Session::put('siteId', 1);
 
         return redirect()->intended($this->redirectPath());
     }

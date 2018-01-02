@@ -31,6 +31,7 @@
         <link href="{{ URL::to('/') }}/assets/plugins/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" />
         <link href="{{ URL::to('/') }}/assets/plugins/bootstrap-datepicker/css/datepicker3.css" rel="stylesheet" />
         <link href="{{ URL::to('/') }}/assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" />
+        <link href="{{ URL::to('/') }}/assets/plugins/DataTables/css/data-table.css" rel="stylesheet" />
         <!-- ================== END PAGE LEVEL STYLE ================== -->
 
         @yield('after-styles')
@@ -99,6 +100,7 @@
         <script src="{{ URL::to('/') }}/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
         <script src="{{ URL::to('/') }}/assets/js/dashboard.min.js"></script>
         <script src="{{ URL::to('/') }}/assets/js/apps.min.js"></script>
+        <script src="{{ URL::to('/') }}/assets/plugins/DataTables/js/jquery.dataTables.js"></script>
         <!-- ================== END PAGE LEVEL JS ================== -->
         <script>
             $(document).ready(function() {

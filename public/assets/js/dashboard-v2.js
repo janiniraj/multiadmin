@@ -1,4 +1,4 @@
-/*   
+/*
 Template Name: Color Admin - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.2
 Version: 1.6.0
 Author: Sean Ngu
@@ -19,7 +19,7 @@ var getMonthName = function(number) {
     month[9] = "October";
     month[10] = "November";
     month[11] = "December";
-    
+
     return month[number];
 };
 
@@ -28,7 +28,7 @@ var getDate = function(date) {
     var dd = currentDate.getDate();
     var mm = currentDate.getMonth() + 1;
     var yyyy = currentDate.getFullYear();
-    
+
     if (dd < 10) {
         dd = '0' + dd;
     }
@@ -36,7 +36,7 @@ var getDate = function(date) {
         mm = '0' + mm;
     }
     currentDate = yyyy+'-'+mm+'-'+dd;
-    
+
     return currentDate;
 };
 
@@ -47,7 +47,7 @@ var handleVisitorsLineChart = function() {
     var blueLight = '#348FE2';
     var blackTransparent = 'rgba(0,0,0,0.6)';
     var whiteTransparent = 'rgba(255,255,255,0.4)';
-    
+
     Morris.Line({
         element: 'visitors-line-chart',
         data: [
@@ -236,7 +236,7 @@ var DashboardV2 = function () {
             handleVisitorsDonutChart();
             handleVisitorsVectorMap();
             handleScheduleCalendar();
-            handleDashboardGritterNotification();
+            //handleDashboardGritterNotification();
         }
     };
 }();
