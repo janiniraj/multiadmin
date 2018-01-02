@@ -538,7 +538,7 @@
 @section('after-scripts')
     <script>
         $(document).ready(function() {
-            App.init();
+            //App.init();
             Dashboard.init();
         });
     </script>
