@@ -30,6 +30,13 @@
                                 </div>
 
                                 <div class="form-group">
+                                    {{ Form::label('route', 'Page Route :', ['class' => 'col-lg-3 control-label']) }}
+                                    <div class="col-md-9">
+                                        {{ Form::text('route', null, ['class' => 'form-control', 'placeholder' => 'Page Route', 'required' => 'required']) }}
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
                                     {{ Form::label('content', 'Page Content :', ['class' => 'col-lg-3 control-label']) }}
                                     <div class="col-md-9">
                                         {{ Form::textarea('content', null, ['class' => 'form-control page-content-editor', 'placeholder' => 'Page Content', 'required' => 'required']) }}

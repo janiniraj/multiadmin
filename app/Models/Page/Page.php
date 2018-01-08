@@ -28,7 +28,8 @@ class Page extends BaseModel
         'name',
         'content',
         'created_at',
-        'updated_at'
+        'updated_at',
+        'route'
     ];
 
     /**
