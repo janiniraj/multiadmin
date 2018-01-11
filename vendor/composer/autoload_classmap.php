@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AccessTableSeeder' => $baseDir . '/database/seeds/AccessTableSeeder.php',
+    'AddRouteField' => $baseDir . '/database/migrations/2018_01_08_021840_add_route_field.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Events\\Backend\\Access\\Role\\RoleCreated' => $baseDir . '/app/Events/Backend/Access/Role/RoleCreated.php',
     'App\\Events\\Backend\\Access\\Role\\RoleDeleted' => $baseDir . '/app/Events/Backend/Access/Role/RoleDeleted.php',
