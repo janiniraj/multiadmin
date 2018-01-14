@@ -18,10 +18,6 @@
             <!-- begin panel -->
             <div class="panel panel-inverse">
                 <div class="panel-heading">
-                    
-                    <div class="panel-heading-btn">
-                        <a class="btn btn-xs btn-warning text-right" href="{{route($repository->adminRoutePrefix .'.'. $repository->moduleRoutes['createRoute'])}}">Create Page</a>
-                    </div>
                     <h4 class="panel-title">{{isset($repository->moduleTitle) ? $repository->moduleTitle. ' Management' : 'Management'}}</h4>
                 </div>
                 <div class="panel-body">
