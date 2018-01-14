@@ -127,7 +127,8 @@ class EloquentBookingRepository extends DbRepository implements BookingRepositor
 		'editRoute' 	=> 'booking.edit',
 		'updateRoute' 	=> 'booking.update',
 		'deleteRoute' 	=> 'booking.destroy',
-		'dataRoute' 	=> 'booking.get-list-data'
+		'dataRoute' 	=> 'booking.get-list-data',
+        'showRoute'     => 'booking.show'
 	];
 
 	/**
@@ -140,6 +141,7 @@ class EloquentBookingRepository extends DbRepository implements BookingRepositor
 		'createView' 	=> 'booking.create',
 		'editView' 		=> 'booking.edit',
 		'deleteView' 	=> 'booking.destroy',
+        'showView'      => 'booking.show'
 	];
 
 	/**
@@ -249,9 +251,9 @@ class EloquentBookingRepository extends DbRepository implements BookingRepositor
     	return [
 			$this->model->getTable().'.id as id',
 			$this->model->getTable().'.name',
-			$this->model->getTable().'.title',
-			$this->model->getTable().'.start_date',
-			$this->model->getTable().'.end_date'
+			$this->model->getTable().'.email',
+            $this->model->getTable().'.message',
+			$this->model->getTable().'.created_at'
 		];
     }
 
@@ -261,7 +263,7 @@ class EloquentBookingRepository extends DbRepository implements BookingRepositor
     public function getForDataTable()
     {
     	return  $this->model->select($this->getTableFields())
-    			->leftjoin($this->siteModel->getTable(), $this->siteModel->getTable().'.id', '=', $this->model->getTable().'.user_id')->get();
+    			->get();
         
     }
 
@@ -303,6 +305,12 @@ class EloquentBookingRepository extends DbRepository implements BookingRepositor
         {
             $passArr['message'] = $input['message'];
             unset($input['message']);
+        }
+
+        if(isset($input['site_id']))
+        {
+            $passArr['site_id'] = $input['site_id'];
+            unset($input['site_id']);
         }
 
         if(isset($input['extra']))

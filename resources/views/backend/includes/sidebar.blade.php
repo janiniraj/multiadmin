@@ -18,6 +18,7 @@
             <li class="nav-header">Navigation</li>
             <li><a href="{{ route('admin.dashboard') }}"><i class="fa fa-laptop"></i> <span>Dashboard</span></a></li>
             <li><a href="{{ route('admin.page.index') }}"><i class="fa fa-paper-plane-o"></i> <span>Page</span></a></li>
+            <li><a href="{{ route('admin.booking.index') }}"><i class="fa fa-calendar"></i> <span>Booking</span></a></li>
 
             <!-- begin sidebar minify button -->
             <li><a href="javascript:;" class="sidebar-minify-btn" data-click="sidebar-minify"><i class="fa fa-angle-double-left"></i></a></li>

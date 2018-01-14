@@ -28,6 +28,7 @@ class Booking extends BaseModel
         'email',
         'message',
         'extra',
+        'site_id',
         'created_at',
         'updated_at'
     ];
