@@ -43,12 +43,12 @@
             </div>
             <div class="panel-body">
                 @if(empty($settings['timing']['rules']))
-                    <div class="form-group">
-                        {{ Form::label('', 'From :', ['class' => 'col-lg-2 control-label']) }}
+                    <div class="form-group timing-rule-container">
+                        {{ Form::label('', 'From :', ['class' => 'col-lg-1 control-label']) }}
                         <div class="col-md-2">
                             {{ Form::number('timing[rules][0][from]', null, ['class' => 'form-control', 'placeholder' => 'From', 'required' => 'required']) }}
                         </div>
-                        {{ Form::label('', 'To :', ['class' => 'col-lg-2 control-label']) }}
+                        {{ Form::label('', 'To :', ['class' => 'col-lg-1 control-label']) }}
                         <div class="col-md-2">
                             {{ Form::number('timing[rules][0][to]', null, ['class' => 'form-control', 'placeholder' => 'To', 'required' => 'required']) }}
                         </div>
@@ -56,12 +56,18 @@
                         <div class="col-md-2">
                             {{ Form::number('timing[rules][0][price]', null, ['class' => 'form-control', 'placeholder' => 'Price', 'required' => 'required']) }}
                         </div>
-                        {{ Form::label('', 'Fixed :', ['class' => 'col-lg-2 control-label']) }}
                         <div class="col-md-2">
-                            {{ Form::checkbox('timing[rules][0][is_fixed]',1,false) }}
+                            <div class="checkbox checkbox-css">
+                                {{ Form::checkbox('timing[rules][0][is_fixed]',1,false) }}
+                                <label for="checkbox_css_1" style="padding-left: 0;">
+                                    Fixed
+                                </label>
+                            </div>
+
                         </div>
                     </div>
                 @endif
+                <button class="btn btn-success add-rule"><i class="fa fa-plus"></i> Add Rule</button>
             </div>
         </div>
         <!-- end panel -->
@@ -71,5 +77,16 @@
 </div>
 @endsection
 @section('after-scripts')
-
+<script>
+    $(document).ready(function(){
+        var newRuleHtml = $('.timing-rule-container')[0].outerHTML;
+        $(".add-rule").on('click', function (e) {
+            e.preventDefault();
+            $(newRuleHtml).insertBefore($(".add-rule"));
+            $('.timing-rule-container:last').find('input[type=text]').each(function(){
+                $(this).val("");
+            });
+        })
+    });
+</script>
 @endsection
