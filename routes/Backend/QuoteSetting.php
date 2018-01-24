@@ -4,5 +4,5 @@ Route::group([
     'as'         => 'quotesetting.',
     'namespace'  => 'QuoteSetting',
 ], function () {
-    Route::get('quotesetting/singleitem', 'SingleItem@index')->name('singleitem.get');
+    Route::get('singleitem', 'SingleItemController@index')->name('singleitem.get');
 });
