@@ -65,7 +65,7 @@
                                 <span class="input-group-addon">.00</span>
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-1">
                             <div class="checkbox checkbox-css">
                                 {{ Form::checkbox('distance[rules][0][is_fixed]',1,false) }}
                                 <label for="checkbox_css_1" style="padding-left: 0;">
@@ -94,7 +94,7 @@
                                     <span class="input-group-addon">.00</span>
                                 </div>
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-1">
                                 <div class="checkbox checkbox-css">
                                     {{ Form::checkbox('distance[rules]['.$ruleKey.'][is_fixed]',1,isset($ruleValue['is_fixed']) ? $ruleValue['is_fixed'] : false) }}
                                     <label for="checkbox_css_1" style="padding-left: 0;">
@@ -103,6 +103,11 @@
                                 </div>
 
                             </div>
+                            @if($ruleKey)
+                                <div class='col-md-1'>
+                                    <button class='btn btn-sm btn-warning delete-rule'>X</button>
+                                </div>
+                            @endif                            
                         </div>
                     @endforeach
                 @endif
@@ -146,6 +151,7 @@
 @section('after-scripts')
 <script>
     var ruleIndex = 0;
+    var closeButtonHtml = "<div class='col-md-1'><button class='btn btn-sm btn-warning delete-rule'>X</button></div>";
     $(document).ready(function(){
         $(".distance-add-rule").on('click', function (e) {
             e.preventDefault();
@@ -163,7 +169,12 @@
                 }
             });
             $(clonedInput).insertBefore(".distance-add-rule");
-        })
+            $('.distance-rule-container:last').append(closeButtonHtml);
+        });
+
+        $(document).on('click', '.delete-rule', function(){
+            $(this).closest('.distance-rule-container').remove();
+        });
     });
 </script>
 @endsection
