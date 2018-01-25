@@ -21,6 +21,7 @@ class QuoteSetting extends BaseModel
      *
      */
     protected $fillable = [
+        'site_id',
         'type',
         'settings',
         'created_at',

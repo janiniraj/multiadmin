@@ -48,6 +48,10 @@ class ComposerStaticInite6d47b3bff9ad0181dbdcf67690b87cf
         array (
             'Webmozart\\Assert\\' => 17,
         ),
+        'U' => 
+        array (
+            'Unisharp\\Ckeditor\\' => 18,
+        ),
         'T' => 
         array (
             'Tymon\\JWTAuth\\' => 14,
@@ -167,6 +171,10 @@ class ComposerStaticInite6d47b3bff9ad0181dbdcf67690b87cf
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Unisharp\\Ckeditor\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/unisharp/laravel-ckeditor',
         ),
         'Tymon\\JWTAuth\\' => 
         array (
@@ -420,6 +428,9 @@ class ComposerStaticInite6d47b3bff9ad0181dbdcf67690b87cf
 
     public static $classMap = array (
         'AccessTableSeeder' => __DIR__ . '/../..' . '/database/seeds/AccessTableSeeder.php',
+        'AddFieldSiteIdBookings' => __DIR__ . '/../..' . '/database/migrations/2018_01_13_080420_add_field_site_id_bookings.php',
+        'AddRouteField' => __DIR__ . '/../..' . '/database/migrations/2018_01_08_021840_add_route_field.php',
+        'AddSiteIdQuoteSettings' => __DIR__ . '/../..' . '/database/migrations/2018_01_25_091619_add_site_id_quote_settings.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Events\\Backend\\Access\\Role\\RoleCreated' => __DIR__ . '/../..' . '/app/Events/Backend/Access/Role/RoleCreated.php',
         'App\\Events\\Backend\\Access\\Role\\RoleDeleted' => __DIR__ . '/../..' . '/app/Events/Backend/Access/Role/RoleDeleted.php',
@@ -457,8 +468,11 @@ class ComposerStaticInite6d47b3bff9ad0181dbdcf67690b87cf
         'App\\Http\\Controllers\\Backend\\Access\\User\\UserSessionController' => __DIR__ . '/../..' . '/app/Http/Controllers/Backend/Access/User/UserSessionController.php',
         'App\\Http\\Controllers\\Backend\\Access\\User\\UserStatusController' => __DIR__ . '/../..' . '/app/Http/Controllers/Backend/Access/User/UserStatusController.php',
         'App\\Http\\Controllers\\Backend\\Access\\User\\UserTableController' => __DIR__ . '/../..' . '/app/Http/Controllers/Backend/Access/User/UserTableController.php',
+        'App\\Http\\Controllers\\Backend\\Booking\\AdminBookingController' => __DIR__ . '/../..' . '/app/Http/Controllers/Backend/Booking/AdminBookingController.php',
         'App\\Http\\Controllers\\Backend\\DashboardController' => __DIR__ . '/../..' . '/app/Http/Controllers/Backend/DashboardController.php',
         'App\\Http\\Controllers\\Backend\\Event\\AdminEventController' => __DIR__ . '/../..' . '/app/Http/Controllers/Backend/Event/AdminEventController.php',
+        'App\\Http\\Controllers\\Backend\\Page\\AdminPageController' => __DIR__ . '/../..' . '/app/Http/Controllers/Backend/Page/AdminPageController.php',
+        'App\\Http\\Controllers\\Backend\\QuoteSetting\\SingleItemController' => __DIR__ . '/../..' . '/app/Http/Controllers/Backend/QuoteSetting/SingleItemController.php',
         'App\\Http\\Controllers\\Backend\\Search\\SearchController' => __DIR__ . '/../..' . '/app/Http/Controllers/Backend/Search/SearchController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\Frontend\\Auth\\ChangePasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Frontend/Auth/ChangePasswordController.php',
@@ -468,6 +482,7 @@ class ComposerStaticInite6d47b3bff9ad0181dbdcf67690b87cf
         'App\\Http\\Controllers\\Frontend\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Frontend/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Frontend\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Frontend/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Frontend\\Auth\\SocialLoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Frontend/Auth/SocialLoginController.php',
+        'App\\Http\\Controllers\\Frontend\\BookingController' => __DIR__ . '/../..' . '/app/Http/Controllers/Frontend/BookingController.php',
         'App\\Http\\Controllers\\Frontend\\Event\\EventController' => __DIR__ . '/../..' . '/app/Http/Controllers/Frontend/Event/EventController.php',
         'App\\Http\\Controllers\\Frontend\\FrontendController' => __DIR__ . '/../..' . '/app/Http/Controllers/Frontend/FrontendController.php',
         'App\\Http\\Controllers\\Frontend\\User\\AccountController' => __DIR__ . '/../..' . '/app/Http/Controllers/Frontend/User/AccountController.php',
@@ -520,12 +535,22 @@ class ComposerStaticInite6d47b3bff9ad0181dbdcf67690b87cf
         'App\\Models\\Access\\User\\Traits\\UserSendPasswordReset' => __DIR__ . '/../..' . '/app/Models/Access/User/Traits/UserSendPasswordReset.php',
         'App\\Models\\Access\\User\\User' => __DIR__ . '/../..' . '/app/Models/Access/User/User.php',
         'App\\Models\\BaseModel' => __DIR__ . '/../..' . '/app/Models/BaseModel.php',
+        'App\\Models\\Booking\\Booking' => __DIR__ . '/../..' . '/app/Models/Booking/Booking.php',
+        'App\\Models\\Booking\\Traits\\Attribute\\Attribute' => __DIR__ . '/../..' . '/app/Models/Booking/Traits/Attribute/Attribute.php',
+        'App\\Models\\Booking\\Traits\\Relationship\\Relationship' => __DIR__ . '/../..' . '/app/Models/Booking/Traits/Relationship/Relationship.php',
         'App\\Models\\Event\\Event' => __DIR__ . '/../..' . '/app/Models/Event/Event.php',
         'App\\Models\\Event\\Traits\\Attribute\\Attribute' => __DIR__ . '/../..' . '/app/Models/Event/Traits/Attribute/Attribute.php',
         'App\\Models\\Event\\Traits\\Relationship\\Relationship' => __DIR__ . '/../..' . '/app/Models/Event/Traits/Relationship/Relationship.php',
         'App\\Models\\History\\History' => __DIR__ . '/../..' . '/app/Models/History/History.php',
         'App\\Models\\History\\HistoryType' => __DIR__ . '/../..' . '/app/Models/History/HistoryType.php',
         'App\\Models\\History\\Traits\\Relationship\\HistoryRelationship' => __DIR__ . '/../..' . '/app/Models/History/Traits/Relationship/HistoryRelationship.php',
+        'App\\Models\\Page\\Page' => __DIR__ . '/../..' . '/app/Models/Page/Page.php',
+        'App\\Models\\Page\\Traits\\Attribute\\Attribute' => __DIR__ . '/../..' . '/app/Models/Page/Traits/Attribute/Attribute.php',
+        'App\\Models\\Page\\Traits\\Relationship\\Relationship' => __DIR__ . '/../..' . '/app/Models/Page/Traits/Relationship/Relationship.php',
+        'App\\Models\\QuoteSetting\\QuoteSetting' => __DIR__ . '/../..' . '/app/Models/QuoteSetting/QuoteSetting.php',
+        'App\\Models\\Site\\Site' => __DIR__ . '/../..' . '/app/Models/Site/Site.php',
+        'App\\Models\\Site\\Traits\\Attribute\\Attribute' => __DIR__ . '/../..' . '/app/Models/Site/Traits/Attribute/Attribute.php',
+        'App\\Models\\Site\\Traits\\Relationship\\Relationship' => __DIR__ . '/../..' . '/app/Models/Site/Traits/Relationship/Relationship.php',
         'App\\Models\\System\\Session' => __DIR__ . '/../..' . '/app/Models/System/Session.php',
         'App\\Models\\UpdateLogger' => __DIR__ . '/../..' . '/app/Models/UpdateLogger.php',
         'App\\Notifications\\Frontend\\Auth\\UserNeedsConfirmation' => __DIR__ . '/../..' . '/app/Notifications/Frontend/Auth/UserNeedsConfirmation.php',
@@ -549,10 +574,14 @@ class ComposerStaticInite6d47b3bff9ad0181dbdcf67690b87cf
         'App\\Repositories\\Backend\\History\\Facades\\History' => __DIR__ . '/../..' . '/app/Repositories/Backend/History/Facades/History.php',
         'App\\Repositories\\Backend\\History\\HistoryContract' => __DIR__ . '/../..' . '/app/Repositories/Backend/History/HistoryContract.php',
         'App\\Repositories\\BaseRepository' => __DIR__ . '/../..' . '/app/Repositories/BaseRepository.php',
+        'App\\Repositories\\Booking\\BookingRepositoryContract' => __DIR__ . '/../..' . '/app/Repositories/Booking/BookingRepositoryContract.php',
+        'App\\Repositories\\Booking\\EloquentBookingRepository' => __DIR__ . '/../..' . '/app/Repositories/Booking/EloquentBookingRepository.php',
         'App\\Repositories\\DbRepository' => __DIR__ . '/../..' . '/app/Repositories/DbRepository.php',
         'App\\Repositories\\Event\\EloquentEventRepository' => __DIR__ . '/../..' . '/app/Repositories/Event/EloquentEventRepository.php',
         'App\\Repositories\\Event\\EventRepositoryContract' => __DIR__ . '/../..' . '/app/Repositories/Event/EventRepositoryContract.php',
         'App\\Repositories\\Frontend\\Access\\User\\UserRepository' => __DIR__ . '/../..' . '/app/Repositories/Frontend/Access/User/UserRepository.php',
+        'App\\Repositories\\Page\\EloquentPageRepository' => __DIR__ . '/../..' . '/app/Repositories/Page/EloquentPageRepository.php',
+        'App\\Repositories\\Page\\PageRepositoryContract' => __DIR__ . '/../..' . '/app/Repositories/Page/PageRepositoryContract.php',
         'App\\Services\\Access\\Access' => __DIR__ . '/../..' . '/app/Services/Access/Access.php',
         'App\\Services\\Access\\Facades\\Access' => __DIR__ . '/../..' . '/app/Services/Access/Facades/Access.php',
         'App\\Services\\Hasher\\Hasher' => __DIR__ . '/../..' . '/app/Services/Hasher/Hasher.php',
@@ -682,8 +711,12 @@ class ComposerStaticInite6d47b3bff9ad0181dbdcf67690b87cf
         'Collective\\Html\\HtmlServiceProvider' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlServiceProvider.php',
         'CreateHistoryTables' => __DIR__ . '/../..' . '/database/migrations/2016_07_03_062439_create_history_tables.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
+        'CreateQuoteSettings' => __DIR__ . '/../..' . '/database/migrations/2018_01_23_093237_create_quote_settings.php',
         'CreateSessionsTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_04_131153_create_sessions_table.php',
         'CreateSocialLoginsTable' => __DIR__ . '/../..' . '/database/migrations/2015_12_28_171741_create_social_logins_table.php',
+        'CreateTableBooking' => __DIR__ . '/../..' . '/database/migrations/2018_01_11_141001_create_table_booking.php',
+        'CreateTablePages' => __DIR__ . '/../..' . '/database/migrations/2017_12_22_125657_create_table_pages.php',
+        'CreateTableSites' => __DIR__ . '/../..' . '/database/migrations/2017_12_22_122441_create_table_sites.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'Creativeorange\\Gravatar\\Exceptions\\InvalidEmailException' => __DIR__ . '/..' . '/creativeorange/gravatar/src/Exceptions/InvalidEmailException.php',
         'Creativeorange\\Gravatar\\Facades\\Gravatar' => __DIR__ . '/..' . '/creativeorange/gravatar/src/Facades/Gravatar.php',
@@ -3965,6 +3998,7 @@ class ComposerStaticInite6d47b3bff9ad0181dbdcf67690b87cf
         'Tymon\\JWTAuth\\Validators\\TokenValidator' => __DIR__ . '/..' . '/tymon/jwt-auth/src/Validators/TokenValidator.php',
         'Tymon\\JWTAuth\\Validators\\ValidatorInterface' => __DIR__ . '/..' . '/tymon/jwt-auth/src/Validators/ValidatorInterface.php',
         'TypeError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/TypeError.php',
+        'Unisharp\\Ckeditor\\ServiceProvider' => __DIR__ . '/..' . '/unisharp/laravel-ckeditor/ServiceProvider.php',
         'UserRoleSeeder' => __DIR__ . '/../..' . '/database/seeds/Access/UserRoleSeeder.php',
         'UserTableSeeder' => __DIR__ . '/../..' . '/database/seeds/Access/UserTableSeeder.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
