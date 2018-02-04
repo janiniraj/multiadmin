@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddFieldSiteIdBookings extends Migration
+class AddSiteIdVanTypes extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class AddFieldSiteIdBookings extends Migration
      */
     public function up()
     {
-        Schema::table('bookings', function (Blueprint $table) {
-            $table->integer('site_id')->nullable();
+        Schema::table('van_types', function (Blueprint $table) {
+            $table->integer('site_id')->nullable()->after('id');
         });
     }
 

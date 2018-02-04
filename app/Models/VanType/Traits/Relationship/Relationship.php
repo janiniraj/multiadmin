@@ -1,4 +1,4 @@
-<?php namespace App\Models\Page\Traits\Relationship;
+<?php namespace App\Models\VanType\Traits\Relationship;
 
 use App\Models\Site\Site;
 

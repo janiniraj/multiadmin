@@ -1,23 +1,23 @@
-<?php namespace App\Models\Page;
+<?php namespace App\Models\VanType;
 
 /**
- * Class Page
+ * Class VanType
  *
  * @author Justin Bevan justin@smokerschoiceusa.com
  */
 
 use App\Models\BaseModel;
-use App\Models\Page\Traits\Attribute\Attribute;
-use App\Models\Page\Traits\Relationship\PageRelationship;
+use App\Models\VanType\Traits\Attribute\Attribute;
+use App\Models\VanType\Traits\Relationship\Relationship;
 
-class Page extends BaseModel
+class VanType extends BaseModel
 {
-    use Attribute, PageRelationship;
+    use Attribute, Relationship;
     /**
      * Database Table
      *
      */
-    protected $table = "pages";
+    protected $table = "van_types";
 
     /**
      * Fillable Database Fields
@@ -25,11 +25,9 @@ class Page extends BaseModel
      */
     protected $fillable = [
         'site_id',
-        'name',
-        'content',
+        'type',
         'created_at',
-        'updated_at',
-        'route'
+        'updated_at'
     ];
 
     /**
