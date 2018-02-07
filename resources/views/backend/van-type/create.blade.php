@@ -12,39 +12,41 @@
     <!-- begin page-header -->
     <h1 class="page-header">Create Van Type</h1>
     <!-- end page-header -->
-    <div class="row">
-        <!-- begin col-12 -->
-        <div class="col-md-12">
-            <!-- begin panel -->
-            <div class="panel panel-inverse">
-                <div class="panel-heading">
-                    <h4 class="panel-title">Create Van Type</h4>
-                </div>
-                <div class="panel-body">
-                            {{ Form::model(null, ['route' => [$repository->getActionRoute('storeRoute')], 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'POST']) }}
-                                <div class="form-group">
-                                    {{ Form::label('type', 'Van Type :', ['class' => 'col-lg-3 control-label']) }}
-                                    <div class="col-md-9">
-                                        {{ Form::text('type', null, ['class' => 'form-control', 'placeholder' => 'Van Type', 'required' => 'required']) }}
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-md-9 text-center">
-                                        {{ Form::submit('Create', ['class' => 'btn btn-sm btn-success']) }}
-                                    </div>
-                                </div>
-                            {{ Form::close() }}
-                        </div>
-            </div>
-            <!-- end panel -->
-        </div>
-        <!-- end col-12 -->
-    </div>
+    {{ Form::model(null, ['route' => [$repository->getActionRoute('storeRoute')], 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'POST']) }}
+        @include('backend.van-type.form')
+    {{ Form::close() }}
 @endsection
 @section('after-scripts')
-    <script src="{{URL::to('/')}}/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
-    <script src="{{URL::to('/')}}/vendor/unisharp/laravel-ckeditor/adapters/jquery.js"></script>
-    <script>
-        $('.page-content-editor').ckeditor();
-    </script>
+<script>
+    var ruleIndex = 0;
+    var closeButtonHtml = "<div class='col-md-1'><button class='btn btn-sm btn-warning delete-rule'>X</button></div>";
+    $(document).ready(function(){
+        $(".days-add-rule").on('click', function (e) {
+            e.preventDefault();
+            var clonedInput = $('.days-rule-container').eq(0).clone();
+            ruleIndex++;
+            clonedInput.find('input,select').each(function() {
+                this.name   = this.name.replace('[0]', '['+ruleIndex+']');
+                if(this.classList.contains('select'))
+                {
+                    $(this).find('option').each(function(){
+                        this.selected = false;
+                    });
+                    $(this).find('option:first').selected = true;
+                }
+                else
+                {
+                    this.value  = "";
+                }
+            });
+            $(clonedInput).insertBefore(".days-add-rule");
+            $('.days-rule-container:last').append(closeButtonHtml);
+        });
+
+        $(document).on('click', '.delete-rule', function(e){
+            e.preventDefault();
+            $(this).closest('.days-rule-container').remove();
+        });
+    });
+</script>
 @endsection

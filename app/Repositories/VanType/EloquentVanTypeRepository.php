@@ -291,6 +291,7 @@ class EloquentVanTypeRepository extends DbRepository implements VanTypeRepositor
     		$input = array_merge($input, ['site_id' => Session::get('siteId')]);
     	}
 
+        $input['day_rules'] = json_encode(array_values($input['day_rules']));
     	return $input;
     }
 

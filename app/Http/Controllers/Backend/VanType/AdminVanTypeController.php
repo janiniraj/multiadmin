@@ -110,7 +110,7 @@ class AdminVanTypeController extends Controller
     public function update($id, Request $request)
     {
         $status = $this->repository->update($id, $request->all());
-        
+
         return redirect()->route($this->repository->setAdmin(true)->getActionRoute('listRoute'))->withFlashSuccess($this->editSuccessMessage);
     }
 

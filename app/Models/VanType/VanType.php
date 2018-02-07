@@ -26,6 +26,11 @@ class VanType extends BaseModel
     protected $fillable = [
         'site_id',
         'type',
+        'cost',
+        'mileage',
+        'mileage_allowance',
+        'day_rules',
+        'discount',
         'created_at',
         'updated_at'
     ];
