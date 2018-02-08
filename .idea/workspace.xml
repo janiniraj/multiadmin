@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5313c83-3bad-4a7b-99a9-89f6dc744f82" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/backend/van-type/form.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Models/VanType/VanTypeSetting.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/VanType/AdminVanTypeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/VanType/AdminVanTypeController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/VanType/Traits/Relationship/Relationship.php" afterPath="$PROJECT_DIR$/app/Models/VanType/Traits/Relationship/Relationship.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/VanType/VanType.php" afterPath="$PROJECT_DIR$/app/Models/VanType/VanType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/VanType/EloquentVanTypeRepository.php" afterPath="$PROJECT_DIR$/app/Repositories/VanType/EloquentVanTypeRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/backend/van-type/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/backend/van-type/create.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/backend/van-type/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/backend/van-type/edit.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/backend/van-type/form.blade.php" afterPath="$PROJECT_DIR$/resources/views/backend/van-type/form.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,12 +23,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="singleitem.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/backend/quotesetting/singleitem.blade.php">
+      <file leaf-file-name="2018_02_08_021818_add_fields_van_types_new.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_08_021818_add_fields_van_types_new.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="138" column="30" lean-forward="false" selection-start-line="138" selection-start-column="30" selection-end-line="138" selection-end-column="30" />
+            <state relative-caret-position="306">
+              <caret line="20" column="11" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="20" selection-end-column="11" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2018_02_08_022232_create_table_van_type_other_settings.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_08_022232_create_table_van_type_other_settings.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="29" column="11" lean-forward="false" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VanType.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Models/VanType/VanType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VanTypeSetting.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Models/VanType/VanTypeSetting.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="45" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Relationship.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Models/VanType/Traits/Relationship/Relationship.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="50" lean-forward="false" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+              <folding>
+                <element signature="e#57#82#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -34,61 +79,17 @@
         <entry file="file://$PROJECT_DIR$/resources/views/backend/van-type/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="23" />
+              <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="form.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/backend/van-type/form.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="143" column="0" lean-forward="false" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
-              <folding>
-                <marker date="1518017542468" expanded="true" signature="2643:3048" ph="..." />
-                <marker date="1518017542468" expanded="true" signature="2658:3046" ph="..." />
-                <marker date="1518017542468" expanded="true" signature="4406:4479" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/backend/van-type/edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="180" lean-forward="false" selection-start-line="14" selection-start-column="180" selection-end-line="14" selection-end-column="180" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminVanTypeController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backend/VanType/AdminVanTypeController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="110" column="5" lean-forward="false" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EloquentVanTypeRepository.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Repositories/VanType/EloquentVanTypeRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="130" column="8" lean-forward="true" selection-start-line="130" selection-start-column="8" selection-end-line="130" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="quote.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../londonmanandvans/resources/views/frontend/quote.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3417">
-              <caret line="201" column="49" lean-forward="false" selection-start-line="201" selection-start-column="49" selection-end-line="201" selection-end-column="49" />
+            <state relative-caret-position="194">
+              <caret line="179" column="114" lean-forward="false" selection-start-line="179" selection-start-column="114" selection-end-line="179" selection-end-column="114" />
               <folding />
             </state>
           </provider>
@@ -115,12 +116,16 @@
       <find>other se</find>
       <find>day_rule</find>
       <find>create</find>
+      <find>Justin Bevan</find>
     </findStrings>
     <replaceStrings>
       <replace>booking</replace>
       <replace>Booking</replace>
       <replace>quote_setting</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/app</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -161,11 +166,16 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Backend/QuoteSetting/SingleItemController.php" />
         <option value="$PROJECT_DIR$/resources/views/backend/quotesetting/singleitem.blade.php" />
         <option value="$PROJECT_DIR$/../londonmanandvans/resources/views/frontend/quote.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/backend/van-type/form.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/backend/van-type/create.blade.php" />
         <option value="$PROJECT_DIR$/app/Repositories/VanType/EloquentVanTypeRepository.php" />
         <option value="$PROJECT_DIR$/resources/views/backend/van-type/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Backend/VanType/AdminVanTypeController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_02_08_021818_add_fields_van_types_new.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_02_08_022232_create_table_van_type_other_settings.php" />
+        <option value="$PROJECT_DIR$/app/Models/VanType/VanType.php" />
+        <option value="$PROJECT_DIR$/app/Models/VanType/VanTypeSetting.php" />
+        <option value="$PROJECT_DIR$/app/Models/VanType/Traits/Relationship/Relationship.php" />
+        <option value="$PROJECT_DIR$/resources/views/backend/van-type/form.blade.php" />
       </list>
     </option>
   </component>
@@ -207,140 +217,68 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
+              <item name="multiadmin" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="multiadmin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="multiadmin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Models" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="multiadmin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Models" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="VanType" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Backend" type="462c0819:PsiDirectoryNode" />
+              <item name="multiadmin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Repositories" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Backend" type="462c0819:PsiDirectoryNode" />
-              <item name="VanType" type="462c0819:PsiDirectoryNode" />
+              <item name="multiadmin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Repositories" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Page" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Models" type="462c0819:PsiDirectoryNode" />
+              <item name="multiadmin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Models" type="462c0819:PsiDirectoryNode" />
-              <item name="QuoteSetting" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Repositories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Repositories" type="462c0819:PsiDirectoryNode" />
-              <item name="VanType" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="booking" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="quotesetting" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-              <item name="van-type" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-              <item name="Backend" type="462c0819:PsiDirectoryNode" />
+              <item name="multiadmin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="migrations" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="vantypere&#9;FILE&#9;file:///var/www/html/multiadmin/app/Repositories/VanType/EloquentVanTypeRepository.php&#10;setting&#9;ACTION&#9;Database.Settings&#10;vantyperepo&#9;null&#9;null&#10;vantypecontr&#9;null&#9;null&#10;van-type/create&#9;FILE&#9;file:///var/www/html/multiadmin/resources/views/backend/van-type/create.blade.php&#10;add_s&#9;FILE&#9;file:///var/www/html/multiadmin/database/migrations/2018_01_13_080420_add_field_site_id_bookings.php&#10;.env&#9;FILE&#9;file:///var/www/html/multiadmin/.env&#10;.gitign&#9;FILE&#9;file:///var/www/html/multiadmin/.gitignore&#10;2018_01_23_093237_create_quote_settings&#9;FILE&#9;file:///var/www/html/multiadmin/database/migrations/2018_01_23_093237_create_quote_settings.php&#10;show.&#9;FILE&#9;file:///var/www/html/multiadmin/resources/views/backend/booking/show.blade.php&#10;show.blade&#9;FILE&#9;file:///var/www/html/multiadmin/resources/views/backend/booking/show.blade.php&#10;sideba&#9;FILE&#9;file:///var/www/html/multiadmin/resources/views/backend/includes/sidebar.blade.php&#10;booking&#9;FILE&#9;file:///var/www/html/multiadmin/app/Http/Controllers/Backend/Booking/AdminBookingController.php&#10;booking/inde&#9;FILE&#9;file:///var/www/html/multiadmin/resources/views/backend/booking/index.blade.php&#10;adminbooki&#9;FILE&#9;file:///var/www/html/multiadmin/app/Http/Controllers/Backend/Booking/AdminBookingController.php&#10;session.php&#9;FILE&#9;file:///var/www/html/multiadmin/config/session.php&#10;config/auth&#9;FILE&#9;file:///var/www/html/multiadmin/config/auth.php&#10;booking.php&#9;FILE&#9;file:///var/www/html/multiadmin/app/Models/Booking/Booking.php&#10;App\Models\Booking\Traits\Attribute\Attribute&#9;FILE&#9;file:///var/www/html/multiadmin/app/Models/Booking/Traits/Attribute/Attribute.php&#10;kernel.php&#9;FILE&#9;file:///var/www/html/multiadmin/app/Http/Kernel.php&#10;kernel&#9;null&#9;null&#10;VerifyCsrfToken&#9;null&#9;null&#10;routeservice&#9;null&#9;null&#10;bookingco&#9;FILE&#9;file:///var/www/html/multiadmin/app/Http/Controllers/Frontend/BookingController.php&#10;frontend&#9;null&#9;null&#10;web.php&#9;FILE&#9;file:///var/www/html/multiadmin/routes/web.php&#10;2018_01_11_141001_create_table_booking&#9;FILE&#9;file:///var/www/html/multiadmin/database/migrations/2018_01_11_141001_create_table_booking.php" />
+    <property name="SearchEverywhereHistoryKey" value="van-type/form&#9;FILE&#9;file:///var/www/html/multiadmin/resources/views/backend/van-type/form.blade.php&#10;van-type/create&#9;FILE&#9;file:///var/www/html/multiadmin/resources/views/backend/van-type/create.blade.php&#10;vantype.php&#9;FILE&#9;file:///var/www/html/multiadmin/app/Models/VanType/VanType.php&#10;2018_02_08_022232_create_table_van_type_other_settings&#9;FILE&#9;file:///var/www/html/multiadmin/database/migrations/2018_02_08_022232_create_table_van_type_other_settings.php&#10;2018_02_08_021818_add_fields_van_types_new&#9;FILE&#9;file:///var/www/html/multiadmin/database/migrations/2018_02_08_021818_add_fields_van_types_new.php&#10;vantypere&#9;FILE&#9;file:///var/www/html/multiadmin/app/Repositories/VanType/EloquentVanTypeRepository.php&#10;setting&#9;ACTION&#9;Database.Settings&#10;vantyperepo&#9;null&#9;null&#10;vantypecontr&#9;null&#9;null&#10;add_s&#9;FILE&#9;file:///var/www/html/multiadmin/database/migrations/2018_01_13_080420_add_field_site_id_bookings.php&#10;.env&#9;FILE&#9;file:///var/www/html/multiadmin/.env&#10;.gitign&#9;FILE&#9;file:///var/www/html/multiadmin/.gitignore&#10;2018_01_23_093237_create_quote_settings&#9;FILE&#9;file:///var/www/html/multiadmin/database/migrations/2018_01_23_093237_create_quote_settings.php&#10;show.&#9;FILE&#9;file:///var/www/html/multiadmin/resources/views/backend/booking/show.blade.php&#10;show.blade&#9;FILE&#9;file:///var/www/html/multiadmin/resources/views/backend/booking/show.blade.php&#10;sideba&#9;FILE&#9;file:///var/www/html/multiadmin/resources/views/backend/includes/sidebar.blade.php&#10;booking&#9;FILE&#9;file:///var/www/html/multiadmin/app/Http/Controllers/Backend/Booking/AdminBookingController.php&#10;booking/inde&#9;FILE&#9;file:///var/www/html/multiadmin/resources/views/backend/booking/index.blade.php&#10;adminbooki&#9;FILE&#9;file:///var/www/html/multiadmin/app/Http/Controllers/Backend/Booking/AdminBookingController.php&#10;session.php&#9;FILE&#9;file:///var/www/html/multiadmin/config/session.php&#10;config/auth&#9;FILE&#9;file:///var/www/html/multiadmin/config/auth.php&#10;booking.php&#9;FILE&#9;file:///var/www/html/multiadmin/app/Models/Booking/Booking.php&#10;App\Models\Booking\Traits\Attribute\Attribute&#9;FILE&#9;file:///var/www/html/multiadmin/app/Models/Booking/Traits/Attribute/Attribute.php&#10;kernel.php&#9;FILE&#9;file:///var/www/html/multiadmin/app/Http/Kernel.php&#10;kernel&#9;null&#9;null&#10;VerifyCsrfToken&#9;null&#9;null&#10;routeservice&#9;null&#9;null&#10;bookingco&#9;FILE&#9;file:///var/www/html/multiadmin/app/Http/Controllers/Frontend/BookingController.php&#10;frontend&#9;null&#9;null&#10;web.php&#9;FILE&#9;file:///var/www/html/multiadmin/routes/web.php&#10;2018_01_11_141001_create_table_booking&#9;FILE&#9;file:///var/www/html/multiadmin/database/migrations/2018_01_11_141001_create_table_booking.php" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
@@ -398,12 +336,6 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -438,6 +370,12 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -464,39 +402,50 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47403000" />
+    <option name="totallyTimeSpent" value="57720000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="132" y="16" width="1311" height="783" extended-state="6" />
+    <frame x="65" y="-4" width="1535" height="904" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27266622" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32774192" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27308604" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27308604" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -510,55 +459,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Booking/Traits/Relationship/Relationship.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/Frontend/Access.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="95" lean-forward="false" selection-start-line="47" selection-start-column="95" selection-end-line="47" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UsersController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="685" column="13" lean-forward="false" selection-start-line="685" selection-start-column="13" selection-end-line="685" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/Booking/BookingRepositoryContract.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-87">
-          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/BaseApiController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="131" column="10" lean-forward="true" selection-start-line="131" selection-start-column="10" selection-end-line="131" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2018_01_08_021840_add_route_field.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -710,7 +610,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="71" column="77" lean-forward="true" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -766,6 +665,49 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../londonmanandvans/resources/views/frontend/quote.blade.php" />
+    <entry file="file://$PROJECT_DIR$/app/Repositories/VanType/EloquentVanTypeRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="130" column="8" lean-forward="true" selection-start-line="130" selection-start-column="8" selection-end-line="130" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/backend/booking/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="23" column="182" lean-forward="false" selection-start-line="23" selection-start-column="143" selection-end-line="23" selection-end-column="182" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/backend/van-type/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="180" lean-forward="false" selection-start-line="14" selection-start-column="180" selection-end-line="14" selection-end-column="180" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backend/VanType/AdminVanTypeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="110" column="5" lean-forward="false" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/backend/booking/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="29" column="38" lean-forward="false" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+          <folding>
+            <marker date="1516867642622" expanded="true" signature="2225:2477" ph="..." />
+            <marker date="1516867642622" expanded="true" signature="2331:2477" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -773,6 +715,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="63" lean-forward="false" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/backend/quotesetting/singleitem.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="127" column="38" lean-forward="false" selection-start-line="127" selection-start-column="38" selection-end-line="127" selection-end-column="38" />
+          <folding>
+            <marker date="1517818359247" expanded="true" signature="1156:1401" ph="..." />
+            <marker date="1517818359247" expanded="true" signature="1170:1399" ph="..." />
+            <marker date="1517818359247" expanded="true" signature="1815:2048" ph="..." />
+            <marker date="1517818359247" expanded="true" signature="1829:2046" ph="..." />
+            <marker date="1517818359247" expanded="true" signature="7503:7696" ph="..." />
+            <marker date="1517818359247" expanded="true" signature="8145:8378" ph="..." />
+            <marker date="1517818359247" expanded="true" signature="8159:8376" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -796,31 +755,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/QuoteSetting/QuoteSetting.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
+        <state relative-caret-position="459">
           <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/backend/booking/show.blade.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_07_122403_add_fields_van_types.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="29" column="38" lean-forward="false" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../londonmanandvans/resources/views/frontend/quote.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3417">
-          <caret line="201" column="49" lean-forward="false" selection-start-line="201" selection-start-column="49" selection-end-line="201" selection-end-column="49" />
+        <state relative-caret-position="323">
+          <caret line="21" column="11" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="21" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/backend/quotesetting/singleitem.blade.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_04_062517_create_van_types.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="138" column="30" lean-forward="false" selection-start-line="138" selection-start-column="30" selection-end-line="138" selection-end-column="30" />
+        <state relative-caret-position="289">
+          <caret line="19" column="11" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="19" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_08_021818_add_fields_van_types_new.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="11" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="20" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_08_022232_create_table_van_type_other_settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="29" column="11" lean-forward="false" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/VanType/Traits/Relationship/Relationship.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="50" lean-forward="false" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+          <folding>
+            <element signature="e#57#82#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/VanType/VanTypeSetting.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="45" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -828,51 +814,23 @@
     <entry file="file://$PROJECT_DIR$/resources/views/backend/van-type/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="23" />
+          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/VanType/EloquentVanTypeRepository.php">
+    <entry file="file://$PROJECT_DIR$/app/Models/VanType/VanType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="130" column="8" lean-forward="true" selection-start-line="130" selection-start-column="8" selection-end-line="130" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/backend/booking/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="23" column="182" lean-forward="false" selection-start-line="23" selection-start-column="143" selection-end-line="23" selection-end-column="182" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/backend/van-type/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="180" lean-forward="false" selection-start-line="14" selection-start-column="180" selection-end-line="14" selection-end-column="180" />
+        <state relative-caret-position="527">
+          <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/backend/van-type/form.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="143" column="0" lean-forward="false" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
-          <folding>
-            <marker date="1518017542468" expanded="true" signature="2643:3048" ph="..." />
-            <marker date="1518017542468" expanded="true" signature="2658:3046" ph="..." />
-            <marker date="1518017542468" expanded="true" signature="4406:4479" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backend/VanType/AdminVanTypeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="110" column="5" lean-forward="false" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
+        <state relative-caret-position="194">
+          <caret line="179" column="114" lean-forward="false" selection-start-line="179" selection-start-column="114" selection-end-line="179" selection-end-column="114" />
           <folding />
         </state>
       </provider>

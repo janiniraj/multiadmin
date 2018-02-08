@@ -15,8 +15,16 @@
                         {{ Form::text('type', null, ['class' => 'form-control', 'placeholder' => 'Van Type', 'required' => 'required']) }}
                     </div>
                 </div>
+
                 <div class="form-group">
-                    {{ Form::label('cost', 'Cost :', ['class' => 'col-lg-3 control-label']) }}
+                    {{ Form::label('mileage', 'Mileage :', ['class' => 'col-lg-3 control-label']) }}
+                    <div class="col-md-9">
+                        {{ Form::number('mileage', null, ['class' => 'form-control', 'placeholder' => 'Mileage', 'required' => 'required', 'min' => 0]) }}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    {{ Form::label('cost', 'Cost per Mile :', ['class' => 'col-lg-3 control-label']) }}
                     <div class="col-md-9">
                         <div class=" input-group">
                             <span class="input-group-addon">£</span>
@@ -26,21 +34,35 @@
 
                     </div>
                 </div>
+
                 <div class="form-group">
-                    {{ Form::label('mileage', 'Mileage :', ['class' => 'col-lg-3 control-label']) }}
+                    {{ Form::label('cost', 'Current Amount of Free Miles :', ['class' => 'col-lg-3 control-label']) }}
                     <div class="col-md-9">
-                        {{ Form::number('mileage', null, ['class' => 'form-control', 'placeholder' => 'Mileage', 'required' => 'required', 'min' => 0]) }}
+                        {{ Form::number('free_miles', null, ['class' => 'form-control', 'placeholder' => 'Current Amount of Free Miles', 'required' => 'required', 'min' => 0]) }}
                     </div>
                 </div>
+
                 <div class="form-group">
-                    {{ Form::label('mileage_allowance', 'Mileage Allowance :', ['class' => 'col-lg-3 control-label']) }}
+                    {{ Form::label('registration_numbers', 'Registration Numbers :', ['class' => 'col-lg-3 control-label']) }}
+                    <div class="col-md-9">
+                        {{ Form::text('registration_numbers', null, ['class' => 'form-control', 'placeholder' => 'Registration Numbers', 'required' => 'required']) }}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    {{ Form::label('description', 'Description :', ['class' => 'col-lg-3 control-label']) }}
+                    <div class="col-md-9">
+                        {{ Form::textarea('description', null, ['class' => 'form-control', 'placeholder' => 'Description', 'required' => 'required', 'rows' => 3]) }}
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    {{ Form::label('discount', 'Flexible Date Discount :', ['class' => 'col-lg-3 control-label']) }}
                     <div class="col-md-9">
                         <div class=" input-group">
-                            <span class="input-group-addon">£</span>
-                            {{ Form::number('mileage_allowance', null, ['class' => 'form-control', 'placeholder' => 'Mileage Allowance', 'required' => 'required', 'min' => 0]) }}
-                            <span class="input-group-addon">.00</span>
+                            {{ Form::number('discount', null, ['class' => 'form-control', 'placeholder' => 'Flexible Date Discount', 'required' => 'required', 'min' => 0]) }}
+                            <span class="input-group-addon">%</span>
                         </div>
-
                     </div>
                 </div>
 
@@ -56,92 +78,124 @@
             </div>
 
             <div class="panel-body">
-                @php
-                $dayOptions = [
-                'Whole Week'    => 'Whole Week',
-                'Sunday'        => 'Sunday',
-                'Monday'        => 'Monday',
-                'Tuesday'       => 'Tuesday',
-                'Wednesday'     => 'Wednesday',
-                'Thursday'      => 'Thursday',
-                'Friday'        => 'Friday',
-                'Saturday'      => 'Saturday'
-                ];
-                @endphp
-                @if(!isset($item))
-                <div class="form-group days-rule-container">
-                    {{ Form::label('', 'Day :', ['class' => 'col-lg-1 control-label']) }}
-                    <div class="col-md-3">
-                        {{ Form::select('day_rules[0][day]', $dayOptions, null, ['class' => 'form-control select', 'required' => 'required']) }}
-                    </div>
-                    {{ Form::label('', 'Man :', ['class' => 'col-lg-1 control-label']) }}
-                    <div class="col-md-2">
-                        {{ Form::number('day_rules[0][man]', null, ['class' => 'form-control', 'placeholder' => 'Man', 'required' => 'required']) }}
-                    </div>
-                    {{ Form::label('', 'Price :', ['class' => 'col-lg-1 control-label']) }}
-                    <div class="col-md-3">
-                        <div class=" input-group">
-                            <span class="input-group-addon">£</span>
-                            {{ Form::number('day_rules[0][price]', null, ['class' => 'form-control', 'placeholder' => 'Price', 'required' => 'required', 'min' => 0]) }}
-                            <span class="input-group-addon">.00</span>
-                        </div>
-                    </div>
-                </div>
-                @else
-                    @php
 
-                        $dayRules = json_decode($item->day_rules, true);
-                    @endphp
-                    @foreach($dayRules as $key => $value)
-                        <div class="form-group days-rule-container">
-                            {{ Form::label('', 'Day :', ['class' => 'col-lg-1 control-label']) }}
-                            <div class="col-md-3">
-                                {{ Form::select('day_rules['.$key.'][day]', $dayOptions, $value['day'], ['class' => 'form-control select', 'required' => 'required']) }}
-                            </div>
-                            {{ Form::label('', 'Man :', ['class' => 'col-lg-1 control-label']) }}
-                            <div class="col-md-2">
-                                {{ Form::number('day_rules['.$key.'][man]', $value['man'], ['class' => 'form-control', 'placeholder' => 'Man', 'required' => 'required']) }}
-                            </div>
-                            {{ Form::label('', 'Price :', ['class' => 'col-lg-1 control-label']) }}
-                            <div class="col-md-3">
+                <div class="panel panel-inverse col-md-6">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">Self Loaded</h4>
+                    </div>
+
+                    <div class="panel-body panel-border">
+                        <div class="form-group">
+                            {{ Form::label('setting[0][sunday]', 'Sunday :', ['class' => 'col-lg-3 control-label']) }}
+                            <div class="col-md-9">
                                 <div class=" input-group">
                                     <span class="input-group-addon">£</span>
-                                    {{ Form::number('day_rules['.$key.'][price]', $value['price'], ['class' => 'form-control', 'placeholder' => 'Price', 'required' => 'required', 'min' => 0]) }}
+                                    {{ Form::number('setting[0][sunday]', 0, ['class' => 'form-control', 'placeholder' => 'Sunday', 'required' => 'required']) }}
                                     <span class="input-group-addon">.00</span>
                                 </div>
+
                             </div>
-                            @if($key != 0)
-                                <div class='col-md-1'><button class='btn btn-sm btn-warning delete-rule'>X</button></div>
-                            @endif
                         </div>
-                    @endforeach
-                @endif
 
-                <button class="btn btn-success days-add-rule"><i class="fa fa-plus"></i> Add Rule</button>
-            </div>
-        </div>
-        <!-- end panel -->
+                        <div class="form-group">
+                            {{ Form::label('setting[0][monday]', 'Monday :', ['class' => 'col-lg-3 control-label']) }}
+                            <div class="col-md-9">
+                                <div class=" input-group">
+                                    <span class="input-group-addon">£</span>
+                                    {{ Form::number('setting[0][monday]', 0, ['class' => 'form-control', 'placeholder' => 'Monday', 'required' => 'required']) }}
+                                    <span class="input-group-addon">.00</span>
+                                </div>
 
-        <!-- begin panel -->
-        <div class="panel panel-inverse">
-            <div class="panel-heading">
-                <h4 class="panel-title">Other Settings</h4>
-            </div>
-            <div class="panel-body">
-                <div class="form-group">
-                    {{ Form::label('discount', 'Flexible Date Discount :', ['class' => 'col-lg-3 control-label']) }}
-                    <div class="col-md-9">
-                        <div class=" input-group">
-                            {{ Form::number('discount', null, ['class' => 'form-control', 'placeholder' => 'Flexible Date Discount', 'required' => 'required', 'min' => 0]) }}
-                            <span class="input-group-addon">%</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            {{ Form::label('setting[0][tuesday]', 'Tuesday :', ['class' => 'col-lg-3 control-label']) }}
+                            <div class="col-md-9">
+                                <div class=" input-group">
+                                    <span class="input-group-addon">£</span>
+                                    {{ Form::number('setting[0][tuesday]', 0, ['class' => 'form-control', 'placeholder' => 'Tuesday', 'required' => 'required']) }}
+                                    <span class="input-group-addon">.00</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            {{ Form::label('setting[0][wednesday]', 'Wednesday :', ['class' => 'col-lg-3 control-label']) }}
+                            <div class="col-md-9">
+                                <div class=" input-group">
+                                    <span class="input-group-addon">£</span>
+                                    {{ Form::number('setting[0][wednesday]', 0, ['class' => 'form-control', 'placeholder' => 'Wednesday', 'required' => 'required']) }}
+                                    <span class="input-group-addon">.00</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            {{ Form::label('setting[0][thursday]', 'Thursday :', ['class' => 'col-lg-3 control-label']) }}
+                            <div class="col-md-9">
+                                <div class=" input-group">
+                                    <span class="input-group-addon">£</span>
+                                    {{ Form::number('setting[0][thursday]', 0, ['class' => 'form-control', 'placeholder' => 'Thursday', 'required' => 'required']) }}
+                                    <span class="input-group-addon">.00</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            {{ Form::label('setting[0][friday]', 'Friday :', ['class' => 'col-lg-3 control-label']) }}
+                            <div class="col-md-9">
+                                <div class=" input-group">
+                                    <span class="input-group-addon">£</span>
+                                    {{ Form::number('setting[0][friday]', 0, ['class' => 'form-control', 'placeholder' => 'Friday', 'required' => 'required']) }}
+                                    <span class="input-group-addon">.00</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            {{ Form::label('setting[0][saturday]', 'Saturday :', ['class' => 'col-lg-3 control-label']) }}
+                            <div class="col-md-9">
+                                <div class=" input-group">
+                                    <span class="input-group-addon">£</span>
+                                    {{ Form::number('setting[0][saturday]', 0, ['class' => 'form-control', 'placeholder' => 'Saturday', 'required' => 'required']) }}
+                                    <span class="input-group-addon">.00</span>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="panel panel-inverse col-md-6">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">Add New</h4>
+                    </div>
+
+                    <div class="panel-body panel-border">
+                        <button class="btn btn-success days-add-rule"><i class="fa fa-plus"></i> Add Rule</button>
+                    </div>
+                </div>
+
+
+
+
             </div>
         </div>
         <!-- end panel -->
+
+
         {{ Form::submit('Save', ['class' => 'btn btn-sm btn-success pull-right']) }}
 
     </div>
     <!-- end col-12 -->
 </div>
+<style>
+    .panel-border {
+        border:1px solid #ccc;
+    }
+</style>

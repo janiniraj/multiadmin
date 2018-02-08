@@ -31,6 +31,10 @@ class VanType extends BaseModel
         'mileage_allowance',
         'day_rules',
         'discount',
+        'free_miles',
+        'registration_numbers',
+        'description',
+        'picture',
         'created_at',
         'updated_at'
     ];
