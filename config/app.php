@@ -206,6 +206,7 @@ return [
         App\Providers\HasherServiceProvider::class,
 
         Unisharp\Ckeditor\ServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class
     ],
 
     /*
@@ -271,7 +272,8 @@ return [
 
         // JWT Auth
         'JWTAuth'   => Tymon\JWTAuthFacades\JWTAuth::class,
-        'JWTFactory' => Tymon\JWTAuthFacades\JWTFactory::class
+        'JWTFactory' => Tymon\JWTAuthFacades\JWTFactory::class,
+        'Image' => Intervention\Image\Facades\Image::class
     ],
 
 ];

@@ -66,6 +66,16 @@
                     </div>
                 </div>
 
+                <div class="form-group">
+                    {{ Form::label('picture', 'Image :', ['class' => 'col-lg-3 control-label']) }}
+                    <div class="col-md-9">
+                        {{ Form::file('picture', null, []) }}
+                        @if(isset($item) && $item->picture)
+                        <img src="{{ url('/').'/img/vantypes/thumbnail/'.$item->picture }}">
+                        @endif
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -79,9 +89,19 @@
 
             <div class="panel-body">
 
-                <div class="panel panel-inverse col-md-6">
+                <div class="panel panel-inverse col-md-6 days-rule-container">
+                    @if(isset($item) && isset($item->settings))
+                        <input class="setting-id" type="hidden" name="setting[0][id]" value="{{ $item->settings[0]->id }}">
+                    @endif
                     <div class="panel-heading">
-                        <h4 class="panel-title">Self Loaded</h4>
+                        <div class="row">
+                            <div class="col-md-4 man-input-container" style="display: none;">
+                                <input name="setting[0][man]" value="0" required placeholder="Man" type="number" class="form-control">
+                            </div>
+                            <div class="col-md-7">
+                                <input name="setting[0][title]" readonly required value="Self Loaded" placeholder="Title" type="text" class="form-control">
+                            </div>
+                        </div>
                     </div>
 
                     <div class="panel-body panel-border">
@@ -90,7 +110,7 @@
                             <div class="col-md-9">
                                 <div class=" input-group">
                                     <span class="input-group-addon">£</span>
-                                    {{ Form::number('setting[0][sunday]', 0, ['class' => 'form-control', 'placeholder' => 'Sunday', 'required' => 'required']) }}
+                                    {{ Form::number('setting[0][sunday]', isset($item) && isset($item->settings) ? $item->settings[0]->sunday : null, ['class' => 'form-control', 'placeholder' => 'Sunday', 'required' => 'required']) }}
                                     <span class="input-group-addon">.00</span>
                                 </div>
 
@@ -102,7 +122,7 @@
                             <div class="col-md-9">
                                 <div class=" input-group">
                                     <span class="input-group-addon">£</span>
-                                    {{ Form::number('setting[0][monday]', 0, ['class' => 'form-control', 'placeholder' => 'Monday', 'required' => 'required']) }}
+                                    {{ Form::number('setting[0][monday]', isset($item) && isset($item->settings) ? $item->settings[0]->monday : null, ['class' => 'form-control', 'placeholder' => 'Monday', 'required' => 'required']) }}
                                     <span class="input-group-addon">.00</span>
                                 </div>
 
@@ -114,7 +134,7 @@
                             <div class="col-md-9">
                                 <div class=" input-group">
                                     <span class="input-group-addon">£</span>
-                                    {{ Form::number('setting[0][tuesday]', 0, ['class' => 'form-control', 'placeholder' => 'Tuesday', 'required' => 'required']) }}
+                                    {{ Form::number('setting[0][tuesday]', isset($item) && isset($item->settings) ? $item->settings[0]->tuesday : null, ['class' => 'form-control', 'placeholder' => 'Tuesday', 'required' => 'required']) }}
                                     <span class="input-group-addon">.00</span>
                                 </div>
 
@@ -126,7 +146,7 @@
                             <div class="col-md-9">
                                 <div class=" input-group">
                                     <span class="input-group-addon">£</span>
-                                    {{ Form::number('setting[0][wednesday]', 0, ['class' => 'form-control', 'placeholder' => 'Wednesday', 'required' => 'required']) }}
+                                    {{ Form::number('setting[0][wednesday]', isset($item) && isset($item->settings) ? $item->settings[0]->wednesday : null, ['class' => 'form-control', 'placeholder' => 'Wednesday', 'required' => 'required']) }}
                                     <span class="input-group-addon">.00</span>
                                 </div>
 
@@ -138,7 +158,7 @@
                             <div class="col-md-9">
                                 <div class=" input-group">
                                     <span class="input-group-addon">£</span>
-                                    {{ Form::number('setting[0][thursday]', 0, ['class' => 'form-control', 'placeholder' => 'Thursday', 'required' => 'required']) }}
+                                    {{ Form::number('setting[0][thursday]',isset($item) && isset($item->settings) ? $item->settings[0]->thursday : null, ['class' => 'form-control', 'placeholder' => 'Thursday', 'required' => 'required']) }}
                                     <span class="input-group-addon">.00</span>
                                 </div>
 
@@ -150,7 +170,7 @@
                             <div class="col-md-9">
                                 <div class=" input-group">
                                     <span class="input-group-addon">£</span>
-                                    {{ Form::number('setting[0][friday]', 0, ['class' => 'form-control', 'placeholder' => 'Friday', 'required' => 'required']) }}
+                                    {{ Form::number('setting[0][friday]', isset($item) && isset($item->settings) ? $item->settings[0]->friday : null, ['class' => 'form-control', 'placeholder' => 'Friday', 'required' => 'required']) }}
                                     <span class="input-group-addon">.00</span>
                                 </div>
 
@@ -162,7 +182,7 @@
                             <div class="col-md-9">
                                 <div class=" input-group">
                                     <span class="input-group-addon">£</span>
-                                    {{ Form::number('setting[0][saturday]', 0, ['class' => 'form-control', 'placeholder' => 'Saturday', 'required' => 'required']) }}
+                                    {{ Form::number('setting[0][saturday]', isset($item) && isset($item->settings) ? $item->settings[0]->saturday : null, ['class' => 'form-control', 'placeholder' => 'Saturday', 'required' => 'required']) }}
                                     <span class="input-group-addon">.00</span>
                                 </div>
 
@@ -171,7 +191,115 @@
                     </div>
                 </div>
 
-                <div class="panel panel-inverse col-md-6">
+                @if(isset($item) && isset($item->settings) && count($item->settings) > 1)
+                    @php
+                        unset($item->settings[0]);
+                    @endphp
+
+                    @foreach($item->settings as $singleKey => $singleValue)
+                        <input class="setting-id" type="hidden" name="setting[{{$singleKey}}][id]" value="{{ $singleValue->id }}">
+                        <div class="panel panel-inverse col-md-6 days-rule-container">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-md-4 man-input-container">
+                                        <input name="setting[{{$singleKey}}][man]" value="{{ $singleValue->man }}" required placeholder="Man" type="number" class="form-control">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <input name="setting[{{$singleKey}}][title]" readonly required value="{{ $singleValue->title }}" placeholder="Title" type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel-body panel-border">
+                                <div class="form-group">
+                                    {{ Form::label('setting[$singleKey][sunday]', 'Sunday :', ['class' => 'col-lg-3 control-label']) }}
+                                    <div class="col-md-9">
+                                        <div class=" input-group">
+                                            <span class="input-group-addon">£</span>
+                                            {{ Form::number('setting['.$singleKey.'][sunday]', $singleValue->sunday, ['class' => 'form-control', 'placeholder' => 'Sunday', 'required' => 'required']) }}
+                                            <span class="input-group-addon">.00</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    {{ Form::label('setting[$singleKey][monday]', 'Monday :', ['class' => 'col-lg-3 control-label']) }}
+                                    <div class="col-md-9">
+                                        <div class=" input-group">
+                                            <span class="input-group-addon">£</span>
+                                            {{ Form::number('setting['.$singleKey.'][monday]', $singleValue->monday , ['class' => 'form-control', 'placeholder' => 'Monday', 'required' => 'required']) }}
+                                            <span class="input-group-addon">.00</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    {{ Form::label('setting[$singleKey][tuesday]', 'Tuesday :', ['class' => 'col-lg-3 control-label']) }}
+                                    <div class="col-md-9">
+                                        <div class=" input-group">
+                                            <span class="input-group-addon">£</span>
+                                            {{ Form::number('setting['.$singleKey.'][tuesday]', $singleValue->tuesday , ['class' => 'form-control', 'placeholder' => 'Tuesday', 'required' => 'required']) }}
+                                            <span class="input-group-addon">.00</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    {{ Form::label('setting[$singleKey][wednesday]', 'Wednesday :', ['class' => 'col-lg-3 control-label']) }}
+                                    <div class="col-md-9">
+                                        <div class=" input-group">
+                                            <span class="input-group-addon">£</span>
+                                            {{ Form::number('setting['.$singleKey.'][wednesday]', $singleValue->wednesday , ['class' => 'form-control', 'placeholder' => 'Wednesday', 'required' => 'required']) }}
+                                            <span class="input-group-addon">.00</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    {{ Form::label('setting[$singleKey][thursday]', 'Thursday :', ['class' => 'col-lg-3 control-label']) }}
+                                    <div class="col-md-9">
+                                        <div class=" input-group">
+                                            <span class="input-group-addon">£</span>
+                                            {{ Form::number('setting['.$singleKey.'][thursday]', $singleValue->thursday , ['class' => 'form-control', 'placeholder' => 'Thursday', 'required' => 'required']) }}
+                                            <span class="input-group-addon">.00</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    {{ Form::label('setting[$singleKey][friday]', 'Friday :', ['class' => 'col-lg-3 control-label']) }}
+                                    <div class="col-md-9">
+                                        <div class=" input-group">
+                                            <span class="input-group-addon">£</span>
+                                            {{ Form::number('setting['.$singleKey.'][friday]', $singleValue->friday , ['class' => 'form-control', 'placeholder' => 'Friday', 'required' => 'required']) }}
+                                            <span class="input-group-addon">.00</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    {{ Form::label('setting[$singleKey][saturday]', 'Saturday :', ['class' => 'col-lg-3 control-label']) }}
+                                    <div class="col-md-9">
+                                        <div class=" input-group">
+                                            <span class="input-group-addon">£</span>
+                                            {{ Form::number('setting['.$singleKey.'][saturday]', $singleValue->saturday , ['class' => 'form-control', 'placeholder' => 'Saturday', 'required' => 'required']) }}
+                                            <span class="input-group-addon">.00</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                @endif
+
+                <div class="panel panel-inverse col-md-6 days-add-rule-container">
                     <div class="panel-heading">
                         <h4 class="panel-title">Add New</h4>
                     </div>
@@ -180,9 +308,6 @@
                         <button class="btn btn-success days-add-rule"><i class="fa fa-plus"></i> Add Rule</button>
                     </div>
                 </div>
-
-
-
 
             </div>
         </div>

@@ -12,7 +12,7 @@
     <!-- begin page-header -->
     <h1 class="page-header">Create Van Type</h1>
     <!-- end page-header -->
-    {{ Form::model(null, ['route' => [$repository->getActionRoute('storeRoute')], 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'POST']) }}
+    {{ Form::model(null, ['route' => [$repository->getActionRoute('storeRoute')], 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'POST', 'files' => true]) }}
         @include('backend.van-type.form')
     {{ Form::close() }}
 @endsection
@@ -25,22 +25,16 @@
             e.preventDefault();
             var clonedInput = $('.days-rule-container').eq(0).clone();
             ruleIndex++;
-            clonedInput.find('input,select').each(function() {
+            clonedInput.find('input').each(function() {
                 this.name   = this.name.replace('[0]', '['+ruleIndex+']');
-                if(this.classList.contains('select'))
-                {
-                    $(this).find('option').each(function(){
-                        this.selected = false;
-                    });
-                    $(this).find('option:first').selected = true;
-                }
-                else
-                {
-                    this.value  = "";
-                }
+                this.value  = "";
+                this.readOnly = false;
             });
-            $(clonedInput).insertBefore(".days-add-rule");
-            $('.days-rule-container:last').append(closeButtonHtml);
+            clonedInput.find('.man-input-container').each(function() {
+                this.style = "";
+            });
+            $(clonedInput).insertAfter(".days-rule-container:last");
+            //$('.days-rule-container:last').append(closeButtonHtml);
         });
 
         $(document).on('click', '.delete-rule', function(e){

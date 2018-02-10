@@ -5,6 +5,8 @@ use App\Models\Site\Site;
 use App\Repositories\DbRepository;
 use App\Exceptions\GeneralException;
 use Session;
+use App\Models\VanType\VanTypeSetting;
+use App\Http\Utilities\FileUploads;
 
 class EloquentVanTypeRepository extends DbRepository implements VanTypeRepositoryContract
 {
@@ -152,6 +154,7 @@ class EloquentVanTypeRepository extends DbRepository implements VanTypeRepositor
 	{
 		$this->model 		= new VanType;
 		$this->siteModel 	= new Site;
+		$this->vanTypeSetting = new VanTypeSetting();
 	}
 
 	/**
@@ -167,11 +170,50 @@ class EloquentVanTypeRepository extends DbRepository implements VanTypeRepositor
 
 		if($model)
 		{
+		    $this->saveSettings($input, $model, true);
+
 			return $model;
 		}
 
 		return false;
-	}	
+	}
+
+    /**
+     * Save Settings
+     *
+     * @param $input
+     * @param bool $model
+     * @param bool $isCreate
+     * @return bool
+     */
+	public function saveSettings($input, $model = false, $isCreate = false)
+    {
+        if($isCreate)
+        {
+            foreach($input['setting'] as $singleKey => $singleValue)
+            {
+                $singleValue['van_type_id'] = $model->id;
+                $this->vanTypeSetting->create($singleValue);
+            }
+        }
+        else
+        {
+            foreach($input['setting'] as $singleKey => $singleValue)
+            {
+                if(isset($singleValue['id']) && $singleValue['id'])
+                {
+                    $settingModel = $this->vanTypeSetting->find($singleValue['id']);
+                    $settingModel->update($singleValue);
+                }
+                else
+                {
+                    $singleValue['van_type_id'] = $model->id;
+                    $this->vanTypeSetting->create($singleValue);
+                }
+            }
+        }
+        return true;
+    }
 
 	/**
 	 * Update VanType
@@ -187,8 +229,11 @@ class EloquentVanTypeRepository extends DbRepository implements VanTypeRepositor
 		if($model)
 		{
 			$input = $this->prepareInputData($input);		
-			
-			return $model->update($input);
+            $flag = $model->update($input);
+
+            $this->saveSettings($input, $model);
+
+			return $flag;
 		}
 
 		return false;
@@ -291,7 +336,15 @@ class EloquentVanTypeRepository extends DbRepository implements VanTypeRepositor
     		$input = array_merge($input, ['site_id' => Session::get('siteId')]);
     	}
 
-        $input['day_rules'] = json_encode(array_values($input['day_rules']));
+        if(!empty($input['picture']))
+        {
+            $fileUpload = new FileUploads();
+            $fileUpload->setBasePath('vantypes');
+
+            $image = $fileUpload->upload($input['picture']);
+
+            $input['picture'] = $image;
+        }
     	return $input;
     }
 

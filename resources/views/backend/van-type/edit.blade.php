@@ -12,35 +12,30 @@
     <!-- begin page-header -->
     <h1 class="page-header">Edit Van Type</h1>
     <!-- end page-header -->
-    {{ Form::model(isset($item) ? $item : null, ['route' => [$repository->getActionRoute('updateRoute'), $item], 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'PATCH']) }}
+    {{ Form::model(isset($item) ? $item : null, ['route' => [$repository->getActionRoute('updateRoute'), $item], 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'PATCH', 'files' => true]) }}
         @include('backend.van-type.form')
     {{ Form::close() }}
 @endsection
 @section('after-scripts')
 <script>
-    var ruleIndex = 0;
+    var ruleIndex = {{ isset($item) && isset($item->settings) ? count($item->settings) : 0 }};
     var closeButtonHtml = "<div class='col-md-1'><button class='btn btn-sm btn-warning delete-rule'>X</button></div>";
     $(document).ready(function(){
         $(".days-add-rule").on('click', function (e) {
             e.preventDefault();
             var clonedInput = $('.days-rule-container').eq(0).clone();
             ruleIndex++;
-            clonedInput.find('input,select').each(function() {
+            clonedInput.find('input').each(function() {
                 this.name   = this.name.replace('[0]', '['+ruleIndex+']');
-                if(this.classList.contains('select'))
-                {
-                    $(this).find('option').each(function(){
-                        this.selected = false;
-                    });
-                    $(this).find('option:first').selected = true;
-                }
-                else
-                {
-                    this.value  = "";
-                }
+                this.value  = "";
+                this.readOnly = false;
             });
-            $(clonedInput).insertBefore(".days-add-rule");
-            $('.days-rule-container:last').append(closeButtonHtml);
+            clonedInput.find('.man-input-container').each(function() {
+                this.style = "";
+            });
+            clonedInput.find('.setting-id').remove();
+            $(clonedInput).insertAfter(".days-rule-container:last");
+            //$('.days-rule-container:last').append(closeButtonHtml);
         });
 
         $(document).on('click', '.delete-rule', function(e){
