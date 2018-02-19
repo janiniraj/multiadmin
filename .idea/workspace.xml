@@ -2,68 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5313c83-3bad-4a7b-99a9-89f6dc744f82" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Utilities/FileUploads.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/.php_cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-4.0.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-4.1.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-4.2.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-4.3.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-4.4.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-4.5.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-4.6.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-4.7.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-4.8.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-5.0.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-5.1.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-5.2.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-5.3.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-5.4.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-5.5.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-5.6.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/clipboard/dialogs/paste.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/az.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/de-ch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/eo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/eu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/gl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/id.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/km.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/ko.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/ku.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/nb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/oc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/pl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/pt-br.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/pt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/ug.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/uk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/zh-cn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/lang/zh.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/notification/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/uicolor/yui/assets/hue_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/uicolor/yui/assets/hue_thumb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/uicolor/yui/assets/picker_mask.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/uicolor/yui/assets/picker_thumb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/uicolor/yui/assets/yui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/plugins/uicolor/yui/yui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/webmozart/assert/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/webmozart/assert/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/webmozart/assert/appveyor.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/webmozart/assert/phpunit.xml.dist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/webmozart/assert/tests/AssertTest.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/Booking/BookingController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/Backend/BookingNew.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vantypes/1518270642_Screenshot from 2018-01-20 22-30-34.png" afterPath="$PROJECT_DIR$/public/img/vantypes/1518270642_Screenshot from 2018-01-20 22-30-34.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vantypes/1518272611_Screenshot from 2018-01-20 22-30-34.png" afterPath="$PROJECT_DIR$/public/img/vantypes/1518272611_Screenshot from 2018-01-20 22-30-34.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vantypes/1518273915_Screenshot from 2018-01-20 22-30-34.png" afterPath="$PROJECT_DIR$/public/img/vantypes/1518273915_Screenshot from 2018-01-20 22-30-34.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vantypes/thumbnail/1518272611_Screenshot from 2018-01-20 22-30-34.png" afterPath="$PROJECT_DIR$/public/img/vantypes/thumbnail/1518272611_Screenshot from 2018-01-20 22-30-34.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/vantypes/thumbnail/1518273915_Screenshot from 2018-01-20 22-30-34.png" afterPath="$PROJECT_DIR$/public/img/vantypes/thumbnail/1518273915_Screenshot from 2018-01-20 22-30-34.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.0.phar" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.0.phar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/psy/psysh/test/fixtures/default/.config/psysh/psysh_history" afterPath="$PROJECT_DIR$/vendor/psy/psysh/test/fixtures/default/.config/psysh/psysh_history" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/psy/psysh/test/fixtures/default/.local/share/psysh/php_manual.sqlite" afterPath="$PROJECT_DIR$/vendor/psy/psysh/test/fixtures/default/.local/share/psysh/php_manual.sqlite" />
@@ -348,23 +293,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/skins/moono/images/refresh.png" afterPath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/skins/moono/images/refresh.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/skins/moono/images/spinner.gif" afterPath="$PROJECT_DIR$/vendor/unisharp/laravel-ckeditor/skins/moono/images/spinner.gif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/VanType/VanTypeSetting.php" afterPath="$PROJECT_DIR$/app/Models/VanType/VanTypeSetting.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/VanType/EloquentVanTypeRepository.php" afterPath="$PROJECT_DIR$/app/Repositories/VanType/EloquentVanTypeRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/backend/van-type/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/backend/van-type/create.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/backend/van-type/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/backend/van-type/edit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/backend/van-type/form.blade.php" afterPath="$PROJECT_DIR$/resources/views/backend/van-type/form.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/Backend/Booking.php" afterPath="$PROJECT_DIR$/routes/Backend/Booking.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/tinker/LICENSE.txt" afterPath="$PROJECT_DIR$/vendor/laravel/tinker/LICENSE.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/tinker/README.md" afterPath="$PROJECT_DIR$/vendor/laravel/tinker/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/tinker/composer.json" afterPath="$PROJECT_DIR$/vendor/laravel/tinker/composer.json" />
@@ -1904,7 +1834,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/swift_init.php" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/swift_init.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/swift_required.php" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/swift_required.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/swift_required_pear.php" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/swift_required_pear.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/swiftmailer_generate_mimes_config.php" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/swiftmailer_generate_mimes_config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/phpunit.xml.dist" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/phpunit.xml.dist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/IdenticalBinaryConstraint.php" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/IdenticalBinaryConstraint.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/StreamCollector.php" afterPath="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/tests/StreamCollector.php" />
@@ -6076,21 +6005,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AdminVanTypeController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backend/VanType/AdminVanTypeController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="EloquentVanTypeRepository.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Repositories/VanType/EloquentVanTypeRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="345" column="27" lean-forward="false" selection-start-line="345" selection-start-column="27" selection-end-line="345" selection-end-column="27" />
+            <state relative-caret-position="374">
+              <caret line="354" column="7" lean-forward="false" selection-start-line="354" selection-start-column="7" selection-end-line="354" selection-end-column="7" />
               <folding>
                 <element signature="e#43#74#0#PHP" expanded="true" />
               </folding>
@@ -6098,44 +6017,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2018_02_10_074109_change_int_to_varchar_title_van_settings.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_10_074109_change_int_to_varchar_title_van_settings.php">
+      <file leaf-file-name="Booking.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/Backend/Booking.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="11" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="17" selection-end-column="11" />
+            <state relative-caret-position="34">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileUploads.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Utilities/FileUploads.php">
+      <file leaf-file-name="BookingNew.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/Backend/BookingNew.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+            <state relative-caret-position="170">
+              <caret line="10" column="71" lean-forward="false" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EloquentBookingNewRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Repositories/Booking/EloquentBookingNewRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="152" column="45" lean-forward="false" selection-start-line="152" selection-start-column="45" selection-end-line="152" selection-end-column="45" />
               <folding>
-                <element signature="e#38#54#0#PHP" expanded="true" />
+                <element signature="e#43#80#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
+      <file leaf-file-name="BookingController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backend/Booking/BookingController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/app.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="275" column="58" lean-forward="false" selection-start-line="275" selection-start-column="58" selection-end-line="275" selection-end-column="58" />
-              <folding />
+            <state relative-caret-position="-51">
+              <caret line="47" column="60" lean-forward="false" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
+              <folding>
+                <element signature="e#55#83#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -6143,49 +6064,80 @@
       <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/backend/van-type/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="14" column="165" lean-forward="false" selection-start-line="14" selection-start-column="165" selection-end-line="14" selection-end-column="165" />
+            <state relative-caret-position="474">
+              <caret line="42" column="11" lean-forward="true" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/backend/van-type/form.blade.php">
+      <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/backend/booking_new/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="73" column="71" lean-forward="false" selection-start-line="73" selection-start-column="71" selection-end-line="73" selection-end-column="71" />
+            <state relative-caret-position="403">
+              <caret line="293" column="61" lean-forward="false" selection-start-line="293" selection-start-column="61" selection-end-line="293" selection-end-column="61" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <marker date="1518274453303" expanded="true" signature="5691:5885" ph="..." />
-                <marker date="1518274453303" expanded="true" signature="5705:5883" ph="..." />
-                <marker date="1518274453303" expanded="true" signature="6467:6661" ph="..." />
-                <marker date="1518274453303" expanded="true" signature="7245:7442" ph="..." />
-                <marker date="1518274453303" expanded="true" signature="8030:8233" ph="..." />
-                <marker date="1518274453303" expanded="true" signature="8044:8231" ph="..." />
-                <marker date="1518274453303" expanded="true" signature="8819:9018" ph="..." />
-                <marker date="1518274453303" expanded="true" signature="9600:9794" ph="..." />
-                <marker date="1518274453303" expanded="true" signature="10380:10580" ph="..." />
-                <marker date="1518274453303" expanded="true" signature="12598:12751" ph="..." />
-                <marker date="1518274453303" expanded="true" signature="13422:13576" ph="..." />
-                <marker date="1518274453303" expanded="true" signature="14249:14406" ph="..." />
-                <marker date="1518274453303" expanded="true" signature="15083:15246" ph="..." />
-                <marker date="1518274453303" expanded="true" signature="15097:15244" ph="..." />
-                <marker date="1518274453303" expanded="true" signature="15921:16081" ph="..." />
-                <marker date="1518274453303" expanded="true" signature="16752:16906" ph="..." />
-                <marker date="1518274453303" expanded="true" signature="17581:17741" ph="..." />
+                <marker date="1518867483500" expanded="true" signature="1128:1413" ph="..." />
+                <marker date="1518867483500" expanded="true" signature="1128:1456" ph="..." />
+                <marker date="1518867483500" expanded="true" signature="1128:1459" ph="..." />
+                <marker date="1518867483500" expanded="true" signature="1128:1461" ph="..." />
+                <marker date="1518867483500" expanded="true" signature="1128:1817" ph="..." />
+                <marker date="1518867483500" expanded="true" signature="1128:1855" ph="..." />
+                <marker date="1518867483500" expanded="true" signature="1128:1857" ph="..." />
+                <marker date="1518867483500" expanded="true" signature="1128:1859" ph="..." />
+                <marker date="1518867483500" expanded="true" signature="1128:2018" ph="..." />
+                <marker date="1518867483500" expanded="true" signature="1128:2052" ph="..." />
+                <marker date="1518867483500" expanded="true" signature="1128:2057" ph="..." />
+                <marker date="1518867483500" expanded="true" signature="1128:2059" ph="..." />
+                <marker date="1518867483500" expanded="true" signature="1128:2061" ph="..." />
+                <marker date="1518867483500" expanded="true" signature="1128:2234" ph="..." />
+                <marker date="1518867483500" expanded="true" signature="1128:2236" ph="..." />
+                <marker date="1518867483500" expanded="true" signature="1128:2292" ph="..." />
+                <marker date="1518867483500" expanded="true" signature="1128:2413" ph="..." />
+                <marker date="1518867483500" expanded="true" signature="1128:2457" ph="..." />
+                <marker date="1518867483500" expanded="true" signature="1128:2459" ph="..." />
+                <marker date="1518867483500" expanded="true" signature="1128:2764" ph="..." />
+                <marker date="1518867483500" expanded="true" signature="1128:2765" ph="..." />
+                <marker date="1518867483500" expanded="true" signature="1144:1411" ph="..." />
+                <marker date="1518867483500" expanded="true" signature="1461:1815" ph="..." />
+                <marker date="1518867483500" expanded="true" signature="1859:2016" ph="..." />
+                <marker date="1518867483500" expanded="true" signature="2061:2234" ph="..." />
+                <marker date="1518867483500" expanded="true" signature="2292:2413" ph="{...}" />
+                <marker date="1518867483500" expanded="true" signature="2459:2762" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/backend/van-type/edit.blade.php">
+      <file leaf-file-name="EloquentBookingRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Repositories/Booking/EloquentBookingRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="182" lean-forward="false" selection-start-line="14" selection-start-column="182" selection-end-line="14" selection-end-column="182" />
+            <state relative-caret-position="272">
+              <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookingNew.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Models/BookingNew/BookingNew.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
               <folding>
-                <marker date="1518270123712" expanded="true" signature="480:674" ph="..." />
+                <element signature="e#94#119#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminBookingController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backend/Booking/AdminBookingController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="31" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+              <folding>
+                <element signature="e#56#84#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -6218,11 +6170,20 @@
       <find>file</find>
       <find>FileUploads</find>
       <find>Image</find>
+      <find>post</find>
+      <find>Booking</find>
+      <find>EloquentBookingRepository</find>
+      <find>siteModel</find>
+      <find>$parking</find>
+      <find>type</find>
+      <find>booking_type</find>
     </findStrings>
     <replaceStrings>
       <replace>booking</replace>
       <replace>Booking</replace>
       <replace>quote_setting</replace>
+      <replace>BookingNew</replace>
+      <replace>EloquentBookingNewRepository</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/app</dir>
@@ -6239,8 +6200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
-        <option value="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
         <option value="$PROJECT_DIR$/app/Models/Booking/Traits/Attribute/Attribute.php" />
         <option value="$PROJECT_DIR$/app/Models/Booking/Traits/Relationship/Relationship.php" />
         <option value="$PROJECT_DIR$/routes/Frontend/Access.php" />
@@ -6252,7 +6211,6 @@
         <option value="$PROJECT_DIR$/database/migrations/2018_01_13_080420_add_field_site_id_bookings.php" />
         <option value="$PROJECT_DIR$/app/Models/Booking/Booking.php" />
         <option value="$PROJECT_DIR$/config/session.php" />
-        <option value="$PROJECT_DIR$/routes/Backend/Booking.php" />
         <option value="$PROJECT_DIR$/resources/views/backend/includes/sidebar.blade.php" />
         <option value="$PROJECT_DIR$/app/Repositories/Booking/EloquentBookingRepository.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Backend/Booking/AdminBookingController.php" />
@@ -6282,6 +6240,17 @@
         <option value="$PROJECT_DIR$/database/migrations/2018_02_10_133903_add_image_van_type.php" />
         <option value="$PROJECT_DIR$/app/Repositories/VanType/EloquentVanTypeRepository.php" />
         <option value="$PROJECT_DIR$/resources/views/backend/van-type/form.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_02_16_103519_create_table_booking_addresses.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_02_16_043327_create_table_booking_new.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_02_16_111745_add_field_status_booking_new.php" />
+        <option value="$PROJECT_DIR$/app/Models/BookingNew/Traits/Attribute/Attribute.php" />
+        <option value="$PROJECT_DIR$/app/Models/BookingNew/Traits/Relationship/Relationship.php" />
+        <option value="$PROJECT_DIR$/app/Models/BookingNew/BookingNew.php" />
+        <option value="$PROJECT_DIR$/routes/Backend/Booking.php" />
+        <option value="$PROJECT_DIR$/routes/Backend/BookingNew.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/Booking/EloquentBookingNewRepository.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Backend/Booking/BookingController.php" />
+        <option value="$PROJECT_DIR$/resources/views/backend/booking_new/create.blade.php" />
       </list>
     </option>
   </component>
@@ -6322,6 +6291,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -6362,6 +6333,15 @@
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
               <item name="Backend" type="462c0819:PsiDirectoryNode" />
+              <item name="Booking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Backend" type="462c0819:PsiDirectoryNode" />
               <item name="VanType" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -6382,6 +6362,39 @@
               <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Models" type="462c0819:PsiDirectoryNode" />
+              <item name="BookingNew" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+              <item name="BookingNew" type="462c0819:PsiDirectoryNode" />
+              <item name="Traits" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+              <item name="BookingNew" type="462c0819:PsiDirectoryNode" />
+              <item name="Traits" type="462c0819:PsiDirectoryNode" />
+              <item name="Attribute" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+              <item name="BookingNew" type="462c0819:PsiDirectoryNode" />
+              <item name="Traits" type="462c0819:PsiDirectoryNode" />
+              <item name="Relationship" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
               <item name="VanType" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -6389,6 +6402,13 @@
               <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Repositories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Repositories" type="462c0819:PsiDirectoryNode" />
+              <item name="Booking" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
@@ -6437,48 +6457,39 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="booking_new" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
               <item name="van-type" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
               <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
               <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="symfony" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="symfony" type="462c0819:PsiDirectoryNode" />
-              <item name="http-foundation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="multiadmin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multiadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="symfony" type="462c0819:PsiDirectoryNode" />
-              <item name="http-foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="File" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="Backend" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="app.php&#9;FILE&#9;file:///var/www/html/multiadmin/config/app.php&#10;composer&#9;FILE&#9;file:///var/www/html/multiadmin/composer.json&#10;2018_02_10_133903_add_image_van_type&#9;FILE&#9;file:///var/www/html/multiadmin/database/migrations/2018_02_10_133903_add_image_van_type.php&#10;remote&#9;ACTION&#9;WebDeployment.BrowseServers&#10;adminvan&#9;FILE&#9;file:///var/www/html/multiadmin/app/Http/Controllers/Backend/VanType/AdminVanTypeController.php&#10;van-type/ed&#9;FILE&#9;file:///var/www/html/multiadmin/resources/views/backend/van-type/edit.blade.php&#10;composer.&#9;FILE&#9;file:///var/www/html/multiadmin/composer.json&#10;vantypecontr&#9;FILE&#9;file:///var/www/html/multiadmin/app/Http/Controllers/Backend/VanType/AdminVanTypeController.php&#10;van-type/form&#9;FILE&#9;file:///var/www/html/multiadmin/resources/views/backend/van-type/form.blade.php&#10;van-type/create&#9;FILE&#9;file:///var/www/html/multiadmin/resources/views/backend/van-type/create.blade.php&#10;vantype.php&#9;FILE&#9;file:///var/www/html/multiadmin/app/Models/VanType/VanType.php&#10;2018_02_08_022232_create_table_van_type_other_settings&#9;FILE&#9;file:///var/www/html/multiadmin/database/migrations/2018_02_08_022232_create_table_van_type_other_settings.php&#10;2018_02_08_021818_add_fields_van_types_new&#9;FILE&#9;file:///var/www/html/multiadmin/database/migrations/2018_02_08_021818_add_fields_van_types_new.php&#10;vantypere&#9;FILE&#9;file:///var/www/html/multiadmin/app/Repositories/VanType/EloquentVanTypeRepository.php&#10;setting&#9;ACTION&#9;Database.Settings&#10;vantyperepo&#9;null&#9;null&#10;add_s&#9;FILE&#9;file:///var/www/html/multiadmin/database/migrations/2018_01_13_080420_add_field_site_id_bookings.php&#10;.env&#9;FILE&#9;file:///var/www/html/multiadmin/.env&#10;.gitign&#9;FILE&#9;file:///var/www/html/multiadmin/.gitignore&#10;2018_01_23_093237_create_quote_settings&#9;FILE&#9;file:///var/www/html/multiadmin/database/migrations/2018_01_23_093237_create_quote_settings.php&#10;show.&#9;FILE&#9;file:///var/www/html/multiadmin/resources/views/backend/booking/show.blade.php&#10;show.blade&#9;FILE&#9;file:///var/www/html/multiadmin/resources/views/backend/booking/show.blade.php&#10;sideba&#9;FILE&#9;file:///var/www/html/multiadmin/resources/views/backend/includes/sidebar.blade.php&#10;booking&#9;FILE&#9;file:///var/www/html/multiadmin/app/Http/Controllers/Backend/Booking/AdminBookingController.php&#10;booking/inde&#9;FILE&#9;file:///var/www/html/multiadmin/resources/views/backend/booking/index.blade.php&#10;adminbooki&#9;FILE&#9;file:///var/www/html/multiadmin/app/Http/Controllers/Backend/Booking/AdminBookingController.php&#10;session.php&#9;FILE&#9;file:///var/www/html/multiadmin/config/session.php&#10;config/auth&#9;FILE&#9;file:///var/www/html/multiadmin/config/auth.php&#10;booking.php&#9;FILE&#9;file:///var/www/html/multiadmin/app/Models/Booking/Booking.php&#10;App\Models\Booking\Traits\Attribute\Attribute&#9;FILE&#9;file:///var/www/html/multiadmin/app/Models/Booking/Traits/Attribute/Attribute.php&#10;kernel.php&#9;FILE&#9;file:///var/www/html/multiadmin/app/Http/Kernel.php&#10;kernel&#9;null&#9;null&#10;VerifyCsrfToken&#9;null&#9;null&#10;routeservice&#9;null&#9;null&#10;bookingco&#9;FILE&#9;file:///var/www/html/multiadmin/app/Http/Controllers/Frontend/BookingController.php&#10;frontend&#9;null&#9;null&#10;web.php&#9;FILE&#9;file:///var/www/html/multiadmin/routes/web.php&#10;2018_01_11_141001_create_table_booking&#9;FILE&#9;file:///var/www/html/multiadmin/database/migrations/2018_01_11_141001_create_table_booking.php" />
+    <property name="SearchEverywhereHistoryKey" value="eloquentbookingne&#9;FILE&#9;file:///var/www/html/multiadmin/app/Repositories/Booking/EloquentBookingNewRepository.php&#10;2018_02_16_043327_create_table_booking_new&#9;FILE&#9;file:///var/www/html/multiadmin/database/migrations/2018_02_16_043327_create_table_booking_new.php&#10;app.php&#9;FILE&#9;file:///var/www/html/multiadmin/config/app.php&#10;composer&#9;FILE&#9;file:///var/www/html/multiadmin/composer.json&#10;2018_02_10_133903_add_image_van_type&#9;FILE&#9;file:///var/www/html/multiadmin/database/migrations/2018_02_10_133903_add_image_van_type.php&#10;remote&#9;ACTION&#9;WebDeployment.BrowseServers&#10;adminvan&#9;FILE&#9;file:///var/www/html/multiadmin/app/Http/Controllers/Backend/VanType/AdminVanTypeController.php&#10;van-type/ed&#9;FILE&#9;file:///var/www/html/multiadmin/resources/views/backend/van-type/edit.blade.php&#10;composer.&#9;FILE&#9;file:///var/www/html/multiadmin/composer.json&#10;vantypecontr&#9;FILE&#9;file:///var/www/html/multiadmin/app/Http/Controllers/Backend/VanType/AdminVanTypeController.php&#10;van-type/form&#9;FILE&#9;file:///var/www/html/multiadmin/resources/views/backend/van-type/form.blade.php&#10;van-type/create&#9;FILE&#9;file:///var/www/html/multiadmin/resources/views/backend/van-type/create.blade.php&#10;vantype.php&#9;FILE&#9;file:///var/www/html/multiadmin/app/Models/VanType/VanType.php&#10;2018_02_08_022232_create_table_van_type_other_settings&#9;FILE&#9;file:///var/www/html/multiadmin/database/migrations/2018_02_08_022232_create_table_van_type_other_settings.php&#10;2018_02_08_021818_add_fields_van_types_new&#9;FILE&#9;file:///var/www/html/multiadmin/database/migrations/2018_02_08_021818_add_fields_van_types_new.php&#10;vantypere&#9;FILE&#9;file:///var/www/html/multiadmin/app/Repositories/VanType/EloquentVanTypeRepository.php&#10;setting&#9;ACTION&#9;Database.Settings&#10;vantyperepo&#9;null&#9;null&#10;add_s&#9;FILE&#9;file:///var/www/html/multiadmin/database/migrations/2018_01_13_080420_add_field_site_id_bookings.php&#10;.env&#9;FILE&#9;file:///var/www/html/multiadmin/.env&#10;.gitign&#9;FILE&#9;file:///var/www/html/multiadmin/.gitignore&#10;2018_01_23_093237_create_quote_settings&#9;FILE&#9;file:///var/www/html/multiadmin/database/migrations/2018_01_23_093237_create_quote_settings.php&#10;show.&#9;FILE&#9;file:///var/www/html/multiadmin/resources/views/backend/booking/show.blade.php&#10;show.blade&#9;FILE&#9;file:///var/www/html/multiadmin/resources/views/backend/booking/show.blade.php&#10;sideba&#9;FILE&#9;file:///var/www/html/multiadmin/resources/views/backend/includes/sidebar.blade.php&#10;booking&#9;FILE&#9;file:///var/www/html/multiadmin/app/Http/Controllers/Backend/Booking/AdminBookingController.php&#10;booking/inde&#9;FILE&#9;file:///var/www/html/multiadmin/resources/views/backend/booking/index.blade.php&#10;adminbooki&#9;FILE&#9;file:///var/www/html/multiadmin/app/Http/Controllers/Backend/Booking/AdminBookingController.php&#10;session.php&#9;FILE&#9;file:///var/www/html/multiadmin/config/session.php&#10;config/auth&#9;FILE&#9;file:///var/www/html/multiadmin/config/auth.php&#10;booking.php&#9;FILE&#9;file:///var/www/html/multiadmin/app/Models/Booking/Booking.php&#10;App\Models\Booking\Traits\Attribute\Attribute&#9;FILE&#9;file:///var/www/html/multiadmin/app/Models/Booking/Traits/Attribute/Attribute.php&#10;kernel.php&#9;FILE&#9;file:///var/www/html/multiadmin/app/Http/Kernel.php&#10;kernel&#9;null&#9;null&#10;VerifyCsrfToken&#9;null&#9;null&#10;routeservice&#9;null&#9;null&#10;bookingco&#9;FILE&#9;file:///var/www/html/multiadmin/app/Http/Controllers/Frontend/BookingController.php&#10;frontend&#9;null&#9;null&#10;web.php&#9;FILE&#9;file:///var/www/html/multiadmin/routes/web.php&#10;2018_01_11_141001_create_table_booking&#9;FILE&#9;file:///var/www/html/multiadmin/database/migrations/2018_01_11_141001_create_table_booking.php" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
@@ -6486,6 +6497,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -6603,12 +6615,14 @@
       <workItem from="1516867721095" duration="8703000" />
       <workItem from="1518008043714" duration="5492000" />
       <workItem from="1518017005952" duration="960000" />
-      <workItem from="1518237217933" duration="18927000" />
+      <workItem from="1518237217933" duration="19718000" />
+      <workItem from="1518534041363" duration="1191000" />
+      <workItem from="1518754873114" duration="30452000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76647000" />
+    <option name="totallyTimeSpent" value="109081000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="132" y="16" width="1311" height="783" extended-state="6" />
@@ -6621,26 +6635,26 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991317" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991317" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17995265" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18468824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32774192" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -6656,97 +6670,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="31" column="27" lean-forward="false" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/backend/dashboard.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-969">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/backend/includes/footer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/backend/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/Booking/EloquentBookingRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="130" column="40" lean-forward="false" selection-start-line="130" selection-start-column="40" selection-end-line="130" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/Frontend/Frontend.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/backend/includes/sidebar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="85" lean-forward="false" selection-start-line="20" selection-start-column="85" selection-end-line="20" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backend/Booking/AdminBookingController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="152" column="36" lean-forward="false" selection-start-line="152" selection-start-column="36" selection-end-line="152" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/Backend/Page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/Backend/Booking.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_01_11_141001_create_table_booking.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="8" selection-end-line="22" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="35" column="38" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2017_12_22_125657_create_table_pages.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -6787,7 +6710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -6796,9 +6718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#53#81#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -6820,7 +6739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -6850,7 +6768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="127" column="38" lean-forward="false" selection-start-line="127" selection-start-column="38" selection-end-line="127" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -6858,9 +6775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="443">
           <caret line="40" column="36" lean-forward="false" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="36" />
-          <folding>
-            <element signature="e#61#89#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -6882,7 +6796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="21" column="11" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="21" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -6890,7 +6803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="19" column="11" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="19" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -6898,15 +6810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_08_022232_create_table_van_type_other_settings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="29" column="11" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="29" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -6914,7 +6817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="27" column="15" lean-forward="true" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -6922,9 +6824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding>
-            <element signature="e#7#45#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -6932,7 +6831,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
           <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -6940,7 +6838,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -6948,14 +6845,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/backend/van-type/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="14" column="165" lean-forward="false" selection-start-line="14" selection-start-column="165" selection-end-line="14" selection-end-column="165" />
           <folding />
         </state>
       </provider>
@@ -6972,17 +6861,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Utilities/FileUploads.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="170">
           <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
           <folding>
-            <element signature="e#38#54#0#PHP" expanded="true" />
+            <element signature="e#38#54#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="357">
           <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
           <folding />
         </state>
@@ -6990,44 +6879,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
+        <state relative-caret-position="4675">
           <caret line="275" column="58" lean-forward="false" selection-start-line="275" selection-start-column="58" selection-end-line="275" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_10_074109_change_int_to_varchar_title_van_settings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="11" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="17" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_10_133903_add_image_van_type.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/VanType/EloquentVanTypeRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="345" column="27" lean-forward="false" selection-start-line="345" selection-start-column="27" selection-end-line="345" selection-end-column="27" />
-          <folding>
-            <element signature="e#43#74#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_10_133903_add_image_van_type.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/backend/van-type/form.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
+        <state relative-caret-position="1241">
           <caret line="73" column="71" lean-forward="false" selection-start-line="73" selection-start-column="71" selection-end-line="73" selection-end-column="71" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <marker date="1518274453303" expanded="true" signature="5691:5885" ph="..." />
             <marker date="1518274453303" expanded="true" signature="5705:5883" ph="..." />
             <marker date="1518274453303" expanded="true" signature="6467:6661" ph="..." />
@@ -7045,6 +6908,182 @@
             <marker date="1518274453303" expanded="true" signature="15921:16081" ph="..." />
             <marker date="1518274453303" expanded="true" signature="16752:16906" ph="..." />
             <marker date="1518274453303" expanded="true" signature="17581:17741" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_08_022232_create_table_van_type_other_settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="29" column="11" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="29" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_16_103519_create_table_booking_addresses.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="21" column="50" lean-forward="false" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_10_074109_change_int_to_varchar_title_van_settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="11" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="17" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_16_111745_add_field_status_booking_new.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_16_043327_create_table_booking_new.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/VanType/EloquentVanTypeRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="354" column="7" lean-forward="false" selection-start-line="354" selection-start-column="7" selection-end-line="354" selection-end-column="7" />
+          <folding>
+            <element signature="e#43#74#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backend/Booking/AdminBookingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="31" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+          <folding>
+            <element signature="e#56#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/BookingNew/Traits/Attribute/Attribute.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#140#149#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/BookingNew/Traits/Relationship/Relationship.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/Booking/EloquentBookingRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/Backend/Booking.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/Backend/BookingNew.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="71" lean-forward="false" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/BookingNew/BookingNew.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding>
+            <element signature="e#94#119#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/Booking/EloquentBookingNewRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="152" column="45" lean-forward="false" selection-start-line="152" selection-start-column="45" selection-end-line="152" selection-end-column="45" />
+          <folding>
+            <element signature="e#43#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backend/Booking/BookingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="47" column="60" lean-forward="false" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
+          <folding>
+            <element signature="e#55#83#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/backend/van-type/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="42" column="11" lean-forward="true" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/backend/booking_new/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="293" column="61" lean-forward="false" selection-start-line="293" selection-start-column="61" selection-end-line="293" selection-end-column="61" />
+          <folding>
+            <marker date="1518867483500" expanded="true" signature="1128:1413" ph="..." />
+            <marker date="1518867483500" expanded="true" signature="1128:1456" ph="..." />
+            <marker date="1518867483500" expanded="true" signature="1128:1459" ph="..." />
+            <marker date="1518867483500" expanded="true" signature="1128:1461" ph="..." />
+            <marker date="1518867483500" expanded="true" signature="1128:1817" ph="..." />
+            <marker date="1518867483500" expanded="true" signature="1128:1855" ph="..." />
+            <marker date="1518867483500" expanded="true" signature="1128:1857" ph="..." />
+            <marker date="1518867483500" expanded="true" signature="1128:1859" ph="..." />
+            <marker date="1518867483500" expanded="true" signature="1128:2018" ph="..." />
+            <marker date="1518867483500" expanded="true" signature="1128:2052" ph="..." />
+            <marker date="1518867483500" expanded="true" signature="1128:2057" ph="..." />
+            <marker date="1518867483500" expanded="true" signature="1128:2059" ph="..." />
+            <marker date="1518867483500" expanded="true" signature="1128:2061" ph="..." />
+            <marker date="1518867483500" expanded="true" signature="1128:2234" ph="..." />
+            <marker date="1518867483500" expanded="true" signature="1128:2236" ph="..." />
+            <marker date="1518867483500" expanded="true" signature="1128:2292" ph="..." />
+            <marker date="1518867483500" expanded="true" signature="1128:2413" ph="..." />
+            <marker date="1518867483500" expanded="true" signature="1128:2457" ph="..." />
+            <marker date="1518867483500" expanded="true" signature="1128:2459" ph="..." />
+            <marker date="1518867483500" expanded="true" signature="1128:2764" ph="..." />
+            <marker date="1518867483500" expanded="true" signature="1128:2765" ph="..." />
+            <marker date="1518867483500" expanded="true" signature="1144:1411" ph="..." />
+            <marker date="1518867483500" expanded="true" signature="1461:1815" ph="..." />
+            <marker date="1518867483500" expanded="true" signature="1859:2016" ph="..." />
+            <marker date="1518867483500" expanded="true" signature="2061:2234" ph="..." />
+            <marker date="1518867483500" expanded="true" signature="2292:2413" ph="{...}" />
+            <marker date="1518867483500" expanded="true" signature="2459:2762" ph="..." />
           </folding>
         </state>
       </provider>
