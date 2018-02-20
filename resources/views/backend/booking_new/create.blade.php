@@ -109,7 +109,7 @@
                                 </div>
                             </div>
 
-                            <div class="company-container">
+                            <div class="company-container postcode-container">
 
                                 <hr/>
 
@@ -118,10 +118,10 @@
                                 <div class="form-group">
                                     {{ Form::label('company_postcode', 'Post Code :', ['class' => 'col-lg-3 control-label']) }}
                                     <div class="col-md-7">
-                                        {{ Form::text('company_postcode', null, ['class' => 'form-control', 'placeholder' => 'PostCode']) }}
+                                        {{ Form::text('company_postcode', null, ['class' => 'form-control postcode-input', 'placeholder' => 'PostCode']) }}
                                     </div>
                                     <div class="col-md-2">
-                                        <button class="btn btn-warning">Search</button>
+                                        <button class="btn btn-warning postcode-submit">Search</button>
                                     </div>
                                 </div>
 
@@ -135,7 +135,7 @@
                                 <div class="form-group">
                                     {{ Form::label('company_address', 'Address :', ['class' => 'col-lg-3 control-label']) }}
                                     <div class="col-md-9">
-                                        {{ Form::select('company_address', [],null, ['class' => 'form-control', 'placeholder' => 'Company Address']) }}
+                                        {{ Form::select('company_address', [],null, ['class' => 'form-control postcode-address', 'placeholder' => 'Company Address']) }}
                                     </div>
                                 </div>
 
@@ -148,7 +148,7 @@
 
                             </div>
 
-                            <div class="pickup-container address-container">
+                            <div class="pickup-container address-container postcode-container">
                                 <hr/>
                                 <h4 class="col-md-11">Pickup address</h4>
 
@@ -157,17 +157,17 @@
                                 <div class="form-group">
                                     {{ Form::label('postcode', 'Post Code :', ['class' => 'col-lg-3 control-label']) }}
                                     <div class="col-md-7">
-                                        {{ Form::text('booking_addresses[0][postcode]', null, ['class' => 'form-control', 'placeholder' => 'PostCode', 'required' => 'required']) }}
+                                        {{ Form::text('booking_addresses[0][postcode]', null, ['class' => 'form-control postcode-input', 'placeholder' => 'PostCode', 'required' => 'required']) }}
                                     </div>
                                     <div class="col-md-2">
-                                        <button class="btn btn-warning">Search</button>
+                                        <button class="btn btn-warning postcode-submit">Search</button>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     {{ Form::label('address', 'Address :', ['class' => 'col-lg-3 control-label']) }}
                                     <div class="col-md-9">
-                                        {{ Form::select('booking_addresses[0][address]', [],null, ['class' => 'form-control', 'placeholder' => 'Address', 'required' => 'required']) }}
+                                        {{ Form::select('booking_addresses[0][address]', [],null, ['class' => 'form-control postcode-address', 'placeholder' => 'Address', 'required' => 'required']) }}
                                     </div>
                                 </div>
 
@@ -189,7 +189,7 @@
 
                             <button class="btn btn-success add-new-pickup">Add New Pickup Address</button>
 
-                            <div class="dropoff-container address-container">
+                            <div class="dropoff-container address-container postcode-container">
                                 <hr/>
                                 <h4 class="col-md-11">Dropoff address</h4>
 
@@ -198,17 +198,17 @@
                                 <div class="form-group">
                                     {{ Form::label('postcode', 'Post Code :', ['class' => 'col-lg-3 control-label']) }}
                                     <div class="col-md-7">
-                                        {{ Form::text('booking_addresses[1][postcode]', null, ['class' => 'form-control', 'placeholder' => 'PostCode', 'required' => 'required']) }}
+                                        {{ Form::text('booking_addresses[1][postcode]', null, ['class' => 'form-control postcode-input', 'placeholder' => 'PostCode', 'required' => 'required']) }}
                                     </div>
                                     <div class="col-md-2">
-                                        <button class="btn btn-warning">Search</button>
+                                        <button class="btn btn-warning postcode-submit">Search</button>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     {{ Form::label('address', 'Address :', ['class' => 'col-lg-3 control-label']) }}
                                     <div class="col-md-9">
-                                        {{ Form::select('booking_addresses[1][address]', [],null, ['class' => 'form-control', 'placeholder' => 'Address', 'required' => 'required']) }}
+                                        {{ Form::select('booking_addresses[1][address]', [],null, ['class' => 'form-control postcode-address', 'placeholder' => 'Address', 'required' => 'required']) }}
                                     </div>
                                 </div>
 
@@ -244,6 +244,7 @@
 @endsection
 @section('after-scripts')
     <script>
+        var addressKey = '5551e-ab7a1-02f0d-00bbc';
         $(document).ready(function(){
             $(".company-container").hide();
             var addressIndex = 1;
@@ -293,6 +294,86 @@
                     });
                     $(".company-container").hide("fold", 1000);
                 }
+            });
+
+            $(document).on('click', '.postcode-submit' , function(e) {
+                e.preventDefault();
+                var postCode = $(this).closest('.postcode-container').find('.postcode-input').val();
+                var addressTarget = $(this).closest('.postcode-container').find('.postcode-address');
+
+                addressTarget.find('option').remove();
+
+                $.ajax({
+                    url: "<?php echo route('admin.booking_new.get-address'); ?>/"+postCode,
+                    type: 'GET',
+                    dataType: "json",
+                    success: function (data) {
+                        if (data.error_code !== undefined)
+                        {
+                            alert(data.error_msg);
+                            jQuery('.find_button' + type + obj.id).show();
+                            jQuery('.loading_block' + type + obj.id).hide();
+                        }
+                        else
+                        {
+                            var clear_data = new Array();
+                            var as = -1;
+                            var address_list = [];
+                            jQuery.each(data.delivery_points, function (index, item) {
+                                as++;
+                                var fullLabel = item.department_name;
+
+                                if (fullLabel !== '' && item.organisation_name !== '')
+                                    fullLabel = fullLabel + ', ' + item.organisation_name;
+                                else
+                                    fullLabel = fullLabel + item.organisation_name;
+
+                                if (fullLabel !== '' && item.line_1 !== '')
+                                    fullLabel = fullLabel + ', ' + item.line_1;
+                                else
+                                    fullLabel = fullLabel + item.line_1;
+
+                                if (fullLabel !== '' && item.line_2 !== '')
+                                    fullLabel = fullLabel + ', ' + item.line_2;
+                                else
+                                    fullLabel = fullLabel + item.line_2;
+
+                                clear_data.push({
+                                    id: as,
+                                    town: data.town,
+                                    postcode: data.postcode,
+                                    pcounty: data.postal_county,
+                                    tcounty: data.traditional_county,
+                                    dep_name: item.department_name,
+                                    line_1: item.line_1,
+                                    line_2: item.line_2,
+                                    org: item.organisation_name,
+                                    udprn: item.udprn,
+                                    label: fullLabel,
+                                    value: data.postcode
+                                });
+
+                                var organisation_name = '';
+
+                                if (item.organisation_name.length > 0)
+                                {
+                                    organisation_name = item.organisation_name + ', ';
+                                }
+
+                                var small_address_info = {
+                                    name: organisation_name + item.line_1 + ', ' + item.line_2 + ', ' + data.town,
+                                    value: String(as)
+                                };
+
+                                address_list.push(small_address_info);
+                                addressTarget.append($('<option>', {
+                                    value: small_address_info.value,
+                                    text : small_address_info.name
+                                }));
+                            });
+                        }
+                    }
+                });
             });
         });
     </script>

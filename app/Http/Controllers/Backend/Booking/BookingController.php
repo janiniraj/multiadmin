@@ -153,4 +153,35 @@ class BookingController extends Controller
             'repository'    => $this->repository
         ]);
     }
+
+    public function getAddress($postCode)
+    {
+        $curl = curl_init();
+        //$url = "https://pcls1.craftyclicks.co.uk/json/rapidaddress?postcode=EC4Y%200DZ&response=data_formatted&lines=2&sort=asc&key=5551e-ab7a1-02f0d-00bbc";
+        $urlToSend = str_replace(' ', '%20', "https://pcls1.craftyclicks.co.uk/json/rapidaddress?postcode=".$postCode."&response=data_formatted&lines=2&sort=asc&key=5551e-ab7a1-02f0d-00bbc");
+
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => $urlToSend,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "GET",
+            CURLOPT_HTTPHEADER => array(
+                "Cache-Control: no-cache"
+            ),
+        ));
+
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+
+        curl_close($curl);
+
+        if ($err) {
+            return response("false");
+        }
+
+        return response($response);
+    }
 }
