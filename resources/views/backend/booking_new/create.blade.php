@@ -229,6 +229,24 @@
                             </div>
 
                             <button class="btn btn-success add-new-dropoff">Add New Dropoff Address</button>
+
+                            <hr/>
+                            <h4 class="col-md-11">Booking Details</h4>
+
+                            <div class="form-group">
+                                {{ Form::label('date', 'Status :', ['class' => 'col-lg-3 control-label']) }}
+                                <div class="col-md-9">
+                                    {{ Form::select('status', $statusArray, null, ['class' => 'form-control', 'required' => 'required']) }}
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                {{ Form::label('status', 'Status :', ['class' => 'col-lg-3 control-label']) }}
+                                <div class="col-md-9">
+                                    {{ Form::select('status', $statusArray, null, ['class' => 'form-control', 'required' => 'required']) }}
+                                </div>
+                            </div>
+
                         </div>
                         <div class="col-md-6">
 
