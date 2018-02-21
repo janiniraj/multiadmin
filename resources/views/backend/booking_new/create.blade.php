@@ -56,6 +56,23 @@
                                     'Permit Holder' => 'Permit Holder',
                                     'Single Yellow' => 'Single Yellow'
                                 ];
+
+                                $h = 0;
+                                while ($h < 24) {
+                                    $key = date('H:i', strtotime(date('Y-m-d') . ' + ' . $h . ' hours'));
+                                    $timeArray[$key] = $key;
+                                    $h++;
+                                }
+
+                                $howYouKnowArray = [
+                                    'Google'            => 'Google',
+                                    'Yell'              => 'Yell',
+                                    'Gumtree'           => 'Gumtree',
+                                    'Recommendation'    => 'Recommendation',
+                                    'Used us before'    => 'Used us before',
+                                    'One of our vans'   => 'One of our vans',
+                                    'Business cards'    => 'Business cards'
+                                ];
                             @endphp
 
                             <div class="form-group">
@@ -229,6 +246,59 @@
                             </div>
 
                             <button class="btn btn-success add-new-dropoff">Add New Dropoff Address</button>
+
+                            <hr>
+                            <h4>Booking Details</h4>
+
+                            <div class="form-group">
+                                {{ Form::label('date', 'Date :', ['class' => 'col-lg-3 control-label']) }}
+                                <div class="col-md-9">
+                                    {{ Form::text('date', null, ['class' => 'form-control datepicker', 'placeholder' => 'mm/dd/YYYY', 'required' => 'required']) }}
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                {{ Form::label('time', 'Time :', ['class' => 'col-lg-3 control-label']) }}
+                                <div class="col-md-9">
+                                    {{ Form::select('time', $timeArray, null, ['class' => 'form-control', 'placeholder' => 'Time', 'required' => 'required']) }}
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                {{ Form::label('van_type_id', 'Van Type :', ['class' => 'col-lg-3 control-label']) }}
+                                <div class="col-md-9">
+                                    {{ Form::select('van_type_id', $vanTypes, null, ['class' => 'form-control van-type-select', 'placeholder' => 'Van Type', 'required' => 'required']) }}
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                {{ Form::label('van_type_setting_id', 'Service Type:', ['class' => 'col-lg-3 control-label']) }}
+                                <div class="col-md-9">
+                                    {{ Form::select('van_type_setting_id', [], null, ['class' => 'form-control van-type-setting-select', 'placeholder' => 'Service Type', 'required' => 'required']) }}
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                {{ Form::label('how_you_know', 'How You know About Us:', ['class' => 'col-lg-3 control-label']) }}
+                                <div class="col-md-9">
+                                    {{ Form::select('how_you_know', $howYouKnowArray, null, ['class' => 'form-control', 'placeholder' => 'How You know About Us', 'required' => 'required']) }}
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                {{ Form::label('inventory', 'Inventory:', ['class' => 'col-lg-3 control-label']) }}
+                                <div class="col-md-9">
+                                    {{ Form::textarea('inventory', null, ['class' => 'form-control', 'placeholder' => 'Inventory', 'rows' => 3 , 'required' => 'required']) }}
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                {{ Form::label('special_remark', 'Special Remark:', ['class' => 'col-lg-3 control-label']) }}
+                                <div class="col-md-9">
+                                    {{ Form::textarea('special_remark', null, ['class' => 'form-control', 'placeholder' => 'Special Remark', 'rows' => 3]) }}
+                                </div>
+                            </div>
+
                         </div>
                         <div class="col-md-6">
 
@@ -249,6 +319,29 @@
             $(".company-container").hide();
             var addressIndex = 1;
             var closeButtonHtml = "<div class='col-md-1'><button class='btn btn-sm btn-danger delete-address'>X</button></div>";
+            $(".datepicker").datepicker({ minDate: 0 });
+
+            $(".van-type-select").on('change', function(){
+                var vanTypeId = $(this).val();
+                $(".van-type-setting-select").find('option').remove();
+                $.ajax({
+                    url: "<?php echo route('admin.booking_new.get-service-types'); ?>/"+vanTypeId,
+                    type: "GET",
+                    dataType: "JSON",
+                    data: {
+                        van_type_id:vanTypeId
+                    },
+                    success: function(data)
+                    {
+                        $.each(data, function(i,v){
+                            $(".van-type-setting-select").append($('<option>', {
+                                value: i,
+                                text : v
+                            }));
+                        });
+                    }
+                });
+            });
             $('.add-new-pickup').on('click', function(e){
                 e.preventDefault();
                 var clonedInput = $('.pickup-container').eq(0).clone();
