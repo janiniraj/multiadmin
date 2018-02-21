@@ -199,11 +199,30 @@ class BookingController extends Controller
         return response($response);
     }
 
+    /**
+     * Get Van Settings
+     *
+     * @param $vanTypeId
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function getVanSettings($vanTypeId, Request $request)
     {
         $services = $this->vanTypeSetting->where('van_type_id', $vanTypeId)->get()->pluck('title', 'id')->toArray();
 
         return response()->json($services);
+    }
 
+    public function getPrice(Request $request)
+    {
+        $data = $request->all();
+
+        if($data['van_type_id'] && $data['van_type_setting_id'] && $data['date'])
+        {
+            $day = strtolower(date('l', strtotime($data['date'])));
+            $resultData = $this->vanTypeSetting->where(['van_type_id' => $data['van_type_id'], 'id' => $data['van_type_setting_id']])->select($day)->first()->toArray();
+            return response()->json($resultData[$day]);
+        }
+        return response()->json(0);
     }
 }

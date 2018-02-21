@@ -20,7 +20,7 @@
                     <h4 class="panel-title">Create Man and Van Booking</h4>
                 </div>
                 <div class="panel-body">
-                    {{ Form::model(null, ['route' => [$repository->getActionRoute('storeRoute')], 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'POST']) }}
+                    {{ Form::model(null, ['route' => [$repository->getActionRoute('storeRoute')], 'class' => 'form-horizontal booking-form', 'role' => 'form', 'method' => 'POST']) }}
                         <div class="col-md-6">
                             @php
                                 $statusArray = [
@@ -253,14 +253,14 @@
                             <div class="form-group">
                                 {{ Form::label('date', 'Date :', ['class' => 'col-lg-3 control-label']) }}
                                 <div class="col-md-9">
-                                    {{ Form::text('date', null, ['class' => 'form-control datepicker', 'placeholder' => 'mm/dd/YYYY', 'required' => 'required']) }}
+                                    {{ Form::text('date', null, ['class' => 'form-control datepicker get-price', 'placeholder' => 'mm/dd/YYYY', 'required' => 'required']) }}
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 {{ Form::label('time', 'Time :', ['class' => 'col-lg-3 control-label']) }}
                                 <div class="col-md-9">
-                                    {{ Form::select('time', $timeArray, null, ['class' => 'form-control', 'placeholder' => 'Time', 'required' => 'required']) }}
+                                    {{ Form::select('time', $timeArray, null, ['class' => 'form-control get-price', 'placeholder' => 'Time', 'required' => 'required']) }}
                                 </div>
                             </div>
 
@@ -274,7 +274,7 @@
                             <div class="form-group">
                                 {{ Form::label('van_type_setting_id', 'Service Type:', ['class' => 'col-lg-3 control-label']) }}
                                 <div class="col-md-9">
-                                    {{ Form::select('van_type_setting_id', [], null, ['class' => 'form-control van-type-setting-select', 'placeholder' => 'Service Type', 'required' => 'required']) }}
+                                    {{ Form::select('van_type_setting_id', [], null, ['class' => 'form-control van-type-setting-select get-price', 'placeholder' => 'Service Type', 'required' => 'required']) }}
                                 </div>
                             </div>
 
@@ -315,32 +315,66 @@
 @section('after-scripts')
     <script>
         var addressKey = '5551e-ab7a1-02f0d-00bbc';
+        var distance = 0;
         $(document).ready(function(){
             $(".company-container").hide();
             var addressIndex = 1;
             var closeButtonHtml = "<div class='col-md-1'><button class='btn btn-sm btn-danger delete-address'>X</button></div>";
             $(".datepicker").datepicker({ minDate: 0 });
 
+            $(".get-price").change(function(){
+
+                var sendRequest = 1;
+
+                $(".get-price").each(function(){
+                    if($(this).val() == '')
+                    {
+                        sendRequest = 0;
+                        return false;
+                    }
+                });
+
+                if(sendRequest)
+                {
+                    $.ajax({
+                        url: "<?php echo route('admin.booking_new.get-price'); ?>",
+                        type: 'POST',
+                        data: $(".booking-form").serialize(),
+                        success: function(data){
+                            console.log(data);
+                        }
+                    });
+                }
+            });
+
             $(".van-type-select").on('change', function(){
                 var vanTypeId = $(this).val();
                 $(".van-type-setting-select").find('option').remove();
-                $.ajax({
-                    url: "<?php echo route('admin.booking_new.get-service-types'); ?>/"+vanTypeId,
-                    type: "GET",
-                    dataType: "JSON",
-                    data: {
-                        van_type_id:vanTypeId
-                    },
-                    success: function(data)
-                    {
-                        $.each(data, function(i,v){
-                            $(".van-type-setting-select").append($('<option>', {
-                                value: i,
-                                text : v
-                            }));
-                        });
-                    }
-                });
+                $(".van-type-setting-select").append($('<option>', {
+                    value: "",
+                    text : "select"
+                }));
+                if(vanTypeId)
+                {
+                    $.ajax({
+                        url: "<?php echo route('admin.booking_new.get-service-types'); ?>/"+vanTypeId,
+                        type: "GET",
+                        dataType: "JSON",
+                        data: {
+                            van_type_id:vanTypeId
+                        },
+                        success: function(data)
+                        {
+                            $.each(data, function(i,v){
+                                $(".van-type-setting-select").append($('<option>', {
+                                    value: i,
+                                    text : v
+                                }));
+                            });
+                        }
+                    });
+                }
+
             });
             $('.add-new-pickup').on('click', function(e){
                 e.preventDefault();
@@ -393,19 +427,24 @@
                 e.preventDefault();
                 var postCode = $(this).closest('.postcode-container').find('.postcode-input').val();
                 var addressTarget = $(this).closest('.postcode-container').find('.postcode-address');
-
                 addressTarget.find('option').remove();
+
+                var postCodeFilled = $('.postcode-input[value!=""]').length;
 
                 $.ajax({
                     url: "<?php echo route('admin.booking_new.get-address'); ?>/"+postCode,
                     type: 'GET',
+                    beforeSend: function(){
+                        $('#page-loader').removeClass('hide');
+                        $('#page-container').removeClass('in');
+                    },
                     dataType: "json",
                     success: function (data) {
+                        $('#page-loader').addClass('hide');
+                        $('#page-container').addClass('in');
                         if (data.error_code !== undefined)
                         {
                             alert(data.error_msg);
-                            jQuery('.find_button' + type + obj.id).show();
-                            jQuery('.loading_block' + type + obj.id).hide();
                         }
                         else
                         {
@@ -464,10 +503,59 @@
                                     text : small_address_info.name
                                 }));
                             });
+
+                            if(postCodeFilled >= 2)
+                            {
+                                manageDistanceCalculation();
+                            }
+
                         }
                     }
                 });
             });
         });
+
+        function manageDistanceCalculation(){
+            
+        }
+
+        function calculateDistances(origin, destination) {
+            var service = new google.maps.DistanceMatrixService(); //initialize the distance service
+            return service.getDistanceMatrix(
+                {
+                    origins: [origin], //set origin, you can specify multiple sources here
+                    destinations: [destination],//set destination, you can specify multiple destinations here
+                    travelMode: google.maps.TravelMode.DRIVING, //set the travelmode
+                    unitSystem: google.maps.UnitSystem.IMPERIAL,//The unit system to use when displaying distance
+                    avoidHighways: false,
+                    avoidTolls: false
+                }, calcDistance); // here calcDistance is the call back function
+        }
+
+        function calcDistance(response, status) {
+            if (status != google.maps.DistanceMatrixStatus.OK) { // check if there is valid result
+                distance =  0;
+            } else {
+                var origins = response.originAddresses;
+                var destinations = response.destinationAddresses;
+
+                for (var i = 0; i < origins.length; i++) {
+                    var results = response.rows[i].elements;
+
+                    for (var j = 0; j < results.length; j++) {
+
+                        if(results[j].status == 'OK')
+                        {
+                            distance =  results[j].distance.text.replace(' mi','');
+                        }
+                        else
+                        {
+                            distance = 0;
+                        }
+                        $(".distance-display").text(distance+' miles');
+                    }
+                }
+            }
+        }
     </script>
 @endsection
