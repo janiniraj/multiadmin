@@ -38,6 +38,7 @@
 
         <!-- ================== BEGIN BASE JS ================== -->
         <script src="{{ URL::to('/') }}/assets/plugins/pace/pace.min.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBy_G7074XW5xIyS9UoP9VtalZ0O1ZJoko"></script>
         <!-- ================== END BASE JS ================== -->
         <!-- Scripts -->
         <script>

@@ -169,7 +169,7 @@
                                 <hr/>
                                 <h4 class="col-md-11">Pickup address</h4>
 
-                                {{ Form::hidden('booking_addresses[0][postcode]', 'pickup') }}
+                                {{ Form::hidden('booking_addresses[0][type]', 'pickup') }}
 
                                 <div class="form-group">
                                     {{ Form::label('postcode', 'Post Code :', ['class' => 'col-lg-3 control-label']) }}
@@ -210,7 +210,7 @@
                                 <hr/>
                                 <h4 class="col-md-11">Dropoff address</h4>
 
-                                {{ Form::hidden('booking_addresses[1][postcode]', 'dropoff') }}
+                                {{ Form::hidden('booking_addresses[1][type]', 'dropoff') }}
 
                                 <div class="form-group">
                                     {{ Form::label('postcode', 'Post Code :', ['class' => 'col-lg-3 control-label']) }}
@@ -302,6 +302,77 @@
 
                         </div>
                         <div class="col-md-6">
+                            <h4>Personal Details</h4>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Name</label>
+                                <div class="col-sm-10">
+                                    <p class="form-control-static name-display"></p>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Email</label>
+                                <div class="col-sm-10">
+                                    <p class="form-control-static email-display"></p>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Phone Number</label>
+                                <div class="col-sm-10">
+                                    <p class="form-control-static phone-display"></p>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Pickup Date</label>
+                                <div class="col-sm-10">
+                                    <p class="form-control-static pickup-date-display"></p>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Pickup Time</label>
+                                <div class="col-sm-10">
+                                    <p class="form-control-static pickup-time-display"></p>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Van Type</label>
+                                <div class="col-sm-10">
+                                    <p class="form-control-static van-type-display"></p>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Service Type</label>
+                                <div class="col-sm-10">
+                                    <p class="form-control-static service-type-display"></p>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Service Type</label>
+                                <div class="col-sm-10">
+                                    <p class="form-control-static service-type-display"></p>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Estimated Distance</label>
+                                <div class="col-sm-10">
+                                    <p class="form-control-static distance-display"></p>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Estimated Duration</label>
+                                <div class="col-sm-10">
+                                    <p class="form-control-static duration-display"></p>
+                                </div>
+                            </div>
 
                         </div>
                     {{ Form::close() }}
@@ -317,6 +388,7 @@
     <script>
         var addressKey = '5551e-ab7a1-02f0d-00bbc';
         var distance = 0;
+        var duration = 0;
         $(document).ready(function(){
             $(".company-container").hide();
             var addressIndex = 1;
@@ -335,12 +407,12 @@
                     }
                 });
 
-                if(sendRequest)
+                if(sendRequest && distance > 0)
                 {
                     $.ajax({
                         url: "<?php echo route('admin.booking_new.get-price'); ?>",
                         type: 'POST',
-                        data: $(".booking-form").serialize(),
+                        data: $(".booking-form").serialize() + '&distance=' + distance,
                         success: function(data){
                             console.log(data);
                         }
@@ -381,7 +453,7 @@
                 e.preventDefault();
                 var clonedInput = $('.pickup-container').eq(0).clone();
                 addressIndex++;
-                clonedInput.find('input').each(function() {
+                clonedInput.find('input,select').each(function() {
                     this.name   = this.name.replace('[0]', '['+addressIndex+']');
                     this.value  = "";
                 });
@@ -394,7 +466,7 @@
                 e.preventDefault();
                 var clonedInput = $('.dropoff-container').eq(0).clone();
                 addressIndex++;
-                clonedInput.find('input').each(function() {
+                clonedInput.find('input,select').each(function() {
                     this.name   = this.name.replace('[1]', '['+addressIndex+']');
                     this.value  = "";
                 });
@@ -429,8 +501,6 @@
                 var postCode = $(this).closest('.postcode-container').find('.postcode-input').val();
                 var addressTarget = $(this).closest('.postcode-container').find('.postcode-address');
                 addressTarget.find('option').remove();
-
-                var postCodeFilled = $('.postcode-input[value!=""]').length;
 
                 $.ajax({
                     url: "<?php echo route('admin.booking_new.get-address'); ?>/"+postCode,
@@ -504,20 +574,38 @@
                                     text : small_address_info.name
                                 }));
                             });
-
-                            if(postCodeFilled >= 2)
-                            {
-                                manageDistanceCalculation();
-                            }
-
                         }
+                        manageDistanceCalculation();
                     }
                 });
             });
         });
-
+        manageDistanceCalculation();
         function manageDistanceCalculation(){
-            
+            var postCodeFilled = $('.postcode-input[value!=""]').length;
+            var pickUpFilled = $('.pickup-container .postcode-input[value!=""]').length;
+            var dropOffFilled = $('.dropoff-container .postcode-input[value!=""]').length;
+
+            if(postCodeFilled >= 2 && pickUpFilled >=1 && dropOffFilled >= 1)
+            {
+                var postCodeArray = new Array();
+                //var postCodeArray = ["NW1 9JP","E1 5NG","W8 7SY","NW4 3RA"];
+                $('.pickup-container .postcode-input[value!=""]').each(function(){
+                    postCodeArray.push($(this).val());
+                });
+
+                $('.dropoff-container .postcode-input[value!=""]').each(function(){
+                    postCodeArray.push($(this).val());
+                });
+
+                for(var i=0; i < postCodeArray.length-1; i++){
+                    calculateDistances(postCodeArray[i], postCodeArray[i+1]);
+                }
+            }
+            else
+            {
+                distance = 0;
+            }
         }
 
         function calculateDistances(origin, destination) {
@@ -534,8 +622,10 @@
         }
 
         function calcDistance(response, status) {
+            console.log(response);
             if (status != google.maps.DistanceMatrixStatus.OK) { // check if there is valid result
-                distance =  0;
+                distance = parseFloat(distance) + parseFloat(0);
+                duration = parseFloat(duration) + parseFloat(0);
             } else {
                 var origins = response.originAddresses;
                 var destinations = response.destinationAddresses;
@@ -547,13 +637,16 @@
 
                         if(results[j].status == 'OK')
                         {
-                            distance =  results[j].distance.text.replace(' mi','');
+                            distance = parseFloat(distance) + (parseFloat(results[j].distance.value)*0.000621371192);
+                            duration = parseFloat(duration) + (parseFloat(results[j].duration.value)/60);
                         }
                         else
                         {
-                            distance = 0;
+                            distance =  parseFloat(distance) + parseFloat(0);
+                            duration = parseFloat(duration) + parseFloat(0);
                         }
-                        $(".distance-display").text(distance+' miles');
+                        $(".distance-display").text(parseFloat(distance).toFixed(2)+' miles');
+                        $(".duration-display").text(parseInt(duration)+' minutes');
                     }
                 }
             }

@@ -216,13 +216,23 @@ class BookingController extends Controller
     public function getPrice(Request $request)
     {
         $data = $request->all();
-
+        $price = 0;
         if($data['van_type_id'] && $data['van_type_setting_id'] && $data['date'])
         {
             $day = strtolower(date('l', strtotime($data['date'])));
+
             $resultData = $this->vanTypeSetting->where(['van_type_id' => $data['van_type_id'], 'id' => $data['van_type_setting_id']])->select($day)->first()->toArray();
-            return response()->json($resultData[$day]);
+
+            $dayPrice = $resultData[$day];
+
+            $vanTypeData = $this->vanTypeRepository->findOrThrowException($data['van_type_id'])->toArray();
+
+            $price = $price + (($data['distance'] < $vanTypeData['free_miles']) ? $data['distance']*$vanTypeData['cost'] : 0);
+
+            $price = $price + $data['distance']*$dayPrice;
+
+            return response()->json($price);
         }
-        return response()->json(0);
+        return response()->json($price);
     }
 }
