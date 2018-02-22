@@ -5,6 +5,8 @@ use App\Http\Controllers\Controller;
 use Yajra\Datatables\Facades\Datatables;
 use App\Repositories\Booking\EloquentBookingNewRepository;
 use Route;
+use App\Repositories\VanType\EloquentVanTypeRepository;
+use App\Models\VanType\VanTypeSetting;
 
 /**
  * Class BookingController
@@ -45,9 +47,11 @@ class BookingController extends Controller
      *
      * @param EloquentBookingRepository $bookingRepository
      */
-    public function __construct(EloquentBookingNewRepository $bookingRepository)
+    public function __construct()
     {
-        $this->repository = $bookingRepository;
+        $this->repository = new EloquentBookingNewRepository();
+        $this->vanTypeRepository = new EloquentVanTypeRepository();
+        $this->vanTypeSetting = new VanTypeSetting();
     }
 
     /**
@@ -70,8 +74,10 @@ class BookingController extends Controller
      */
     public function create(Request $request)
     {
+        $vanTypes = $this->vanTypeRepository->getAll()->pluck('type', 'id')->toArray();
         return view($this->repository->setAdmin(true)->getModuleView('createView'))->with([
-            'repository' => $this->repository
+            'repository' => $this->repository,
+            'vanTypes' => $vanTypes
         ]);
     }
 
@@ -145,6 +151,10 @@ class BookingController extends Controller
             ->make(true);
     }
 
+    /**
+     * @param $id
+     * @return $this
+     */
     public function show($id)
     {
         $item = $this->repository->getById($id);
@@ -154,6 +164,10 @@ class BookingController extends Controller
         ]);
     }
 
+    /**
+     * @param $postCode
+     * @return \Illuminate\Contracts\Routing\ResponseFactory|\Symfony\Component\HttpFoundation\Response
+     */
     public function getAddress($postCode)
     {
         $curl = curl_init();
@@ -183,5 +197,32 @@ class BookingController extends Controller
         }
 
         return response($response);
+    }
+
+    /**
+     * Get Van Settings
+     *
+     * @param $vanTypeId
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function getVanSettings($vanTypeId, Request $request)
+    {
+        $services = $this->vanTypeSetting->where('van_type_id', $vanTypeId)->get()->pluck('title', 'id')->toArray();
+
+        return response()->json($services);
+    }
+
+    public function getPrice(Request $request)
+    {
+        $data = $request->all();
+
+        if($data['van_type_id'] && $data['van_type_setting_id'] && $data['date'])
+        {
+            $day = strtolower(date('l', strtotime($data['date'])));
+            $resultData = $this->vanTypeSetting->where(['van_type_id' => $data['van_type_id'], 'id' => $data['van_type_setting_id']])->select($day)->first()->toArray();
+            return response()->json($resultData[$day]);
+        }
+        return response()->json(0);
     }
 }
