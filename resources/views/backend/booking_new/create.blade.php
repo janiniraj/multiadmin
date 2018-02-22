@@ -56,6 +56,13 @@
                                     'Permit Holder' => 'Permit Holder',
                                     'Single Yellow' => 'Single Yellow'
                                 ];
+
+                                $h = 0;
+                                while ($h < 24) {
+                                    $key = date('H:i', strtotime(date('Y-m-d') . ' + ' . $h . ' hours'));
+                                    $timeArray[$key] = $key;
+                                    $h++;
+                                }
                             @endphp
 
                             <div class="form-group">
@@ -234,16 +241,16 @@
                             <h4 class="col-md-11">Booking Details</h4>
 
                             <div class="form-group">
-                                {{ Form::label('date', 'Status :', ['class' => 'col-lg-3 control-label']) }}
+                                {{ Form::label('date', 'Date :', ['class' => 'col-lg-3 control-label']) }}
                                 <div class="col-md-9">
-                                    {{ Form::select('status', $statusArray, null, ['class' => 'form-control', 'required' => 'required']) }}
+                                    {{ Form::text('date', null, ['class' => 'form-control datepicker', 'required' => 'required']) }}
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                {{ Form::label('status', 'Status :', ['class' => 'col-lg-3 control-label']) }}
+                                {{ Form::label('time', 'Time :', ['class' => 'col-lg-3 control-label']) }}
                                 <div class="col-md-9">
-                                    {{ Form::select('status', $statusArray, null, ['class' => 'form-control', 'required' => 'required']) }}
+                                    {{ Form::select('time', $timeArray, null, ['class' => 'form-control', 'required' => 'required']) }}
                                 </div>
                             </div>
 
@@ -264,6 +271,7 @@
     <script>
         var addressKey = '5551e-ab7a1-02f0d-00bbc';
         $(document).ready(function(){
+            $(".datepicker").datepicker();
             $(".company-container").hide();
             var addressIndex = 1;
             var closeButtonHtml = "<div class='col-md-1'><button class='btn btn-sm btn-danger delete-address'>X</button></div>";

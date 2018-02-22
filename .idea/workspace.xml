@@ -37,26 +37,28 @@
       <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/backend/booking_new/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="236" column="52" lean-forward="false" selection-start-line="236" selection-start-column="52" selection-end-line="236" selection-end-column="52" />
+            <state relative-caret-position="-438">
+              <caret line="315" column="20" lean-forward="true" selection-start-line="315" selection-start-column="20" selection-end-line="315" selection-end-column="20" />
               <folding>
-                <element signature="e#11063#13617#0#HTML" expanded="false" />
-                <marker date="1519181605780" expanded="true" signature="1128:2764" ph="..." />
-                <marker date="1519181605780" expanded="true" signature="1144:1411" ph="..." />
-                <marker date="1519181605780" expanded="true" signature="1461:1815" ph="..." />
-                <marker date="1519181605780" expanded="true" signature="1859:2016" ph="..." />
-                <marker date="1519181605780" expanded="true" signature="2061:2234" ph="..." />
-                <marker date="1519181605780" expanded="true" signature="2292:2413" ph="{...}" />
-                <marker date="1519181605780" expanded="true" signature="2459:2762" ph="..." />
+                <element signature="e#11397#13951#0#HTML" expanded="false" />
+                <marker date="1519186155619" expanded="true" signature="1128:2764" ph="..." />
+                <marker date="1519186155619" expanded="true" signature="1128:3098" ph="..." />
+                <marker date="1519186155619" expanded="true" signature="1144:1411" ph="..." />
+                <marker date="1519186155619" expanded="true" signature="1461:1815" ph="..." />
+                <marker date="1519186155619" expanded="true" signature="1859:2016" ph="..." />
+                <marker date="1519186155619" expanded="true" signature="2061:2234" ph="..." />
+                <marker date="1519186155619" expanded="true" signature="2292:2413" ph="{...}" />
+                <marker date="1519186155619" expanded="true" signature="2459:2762" ph="..." />
+                <marker date="1519186155619" expanded="true" signature="2855:3097" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookingController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BookingController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backend/Booking/BookingController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
+            <state relative-caret-position="1432">
               <caret line="180" column="12" lean-forward="false" selection-start-line="180" selection-start-column="12" selection-end-line="180" selection-end-column="12" />
               <folding>
                 <element signature="e#55#83#0#PHP" expanded="true" />
@@ -78,98 +80,8 @@
       <file leaf-file-name="BookingNew.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/Backend/BookingNew.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2018_02_16_043327_create_table_booking_new.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_16_043327_create_table_booking_new.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2018_02_16_103519_create_table_booking_addresses.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_16_103519_create_table_booking_addresses.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2018_02_16_111745_add_field_status_booking_new.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_16_111745_add_field_status_booking_new.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2018_02_10_074109_change_int_to_varchar_title_van_settings.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_10_074109_change_int_to_varchar_title_van_settings.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2018_02_07_122403_add_fields_van_types.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_07_122403_add_fields_van_types.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2018_02_04_082940_add_site_id_van_types.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_04_082940_add_site_id_van_types.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2018_02_04_062517_create_van_types.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_04_062517_create_van_types.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2018_01_25_091619_add_site_id_quote_settings.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2018_01_25_091619_add_site_id_quote_settings.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2018_01_23_093237_create_quote_settings.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2018_01_23_093237_create_quote_settings.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+            <state relative-caret-position="170">
+              <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -179,8 +91,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getby</find>
-      <find>booking</find>
       <find>$</find>
       <find>timing</find>
       <find>Session</find>
@@ -209,6 +119,8 @@
       <find>postcode-co</find>
       <find>postcode-submit</find>
       <find>preven</find>
+      <find>enum</find>
+      <find>date</find>
     </findStrings>
     <replaceStrings>
       <replace>booking</replace>
@@ -272,7 +184,6 @@
         <option value="$PROJECT_DIR$/database/migrations/2018_02_10_133903_add_image_van_type.php" />
         <option value="$PROJECT_DIR$/app/Repositories/VanType/EloquentVanTypeRepository.php" />
         <option value="$PROJECT_DIR$/resources/views/backend/van-type/form.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_02_16_111745_add_field_status_booking_new.php" />
         <option value="$PROJECT_DIR$/app/Models/BookingNew/Traits/Attribute/Attribute.php" />
         <option value="$PROJECT_DIR$/app/Models/BookingNew/Traits/Relationship/Relationship.php" />
         <option value="$PROJECT_DIR$/app/Models/BookingNew/BookingNew.php" />
@@ -280,9 +191,10 @@
         <option value="$PROJECT_DIR$/app/Repositories/Booking/EloquentBookingNewRepository.php" />
         <option value="$PROJECT_DIR$/routes/Backend/BookingNew.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Backend/Booking/BookingController.php" />
-        <option value="$PROJECT_DIR$/resources/views/backend/booking_new/create.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_02_16_103519_create_table_booking_addresses.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_02_16_043327_create_table_booking_new.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_02_16_111745_add_field_status_booking_new.php" />
+        <option value="$PROJECT_DIR$/resources/views/backend/booking_new/create.blade.php" />
       </list>
     </option>
   </component>
@@ -529,7 +441,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117391000" />
+    <option name="totallyTimeSpent" value="120942000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1535" height="904" extended-state="6" />
@@ -857,41 +769,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/Backend/BookingNew.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backend/Booking/BookingController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="180" column="12" lean-forward="false" selection-start-line="180" selection-start-column="12" selection-end-line="180" selection-end-column="12" />
-          <folding>
-            <element signature="e#55#83#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/backend/booking_new/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="236" column="52" lean-forward="false" selection-start-line="236" selection-start-column="52" selection-end-line="236" selection-end-column="52" />
-          <folding>
-            <element signature="e#11063#13617#0#HTML" expanded="false" />
-            <marker date="1519181605780" expanded="true" signature="1128:2764" ph="..." />
-            <marker date="1519181605780" expanded="true" signature="1144:1411" ph="..." />
-            <marker date="1519181605780" expanded="true" signature="1461:1815" ph="..." />
-            <marker date="1519181605780" expanded="true" signature="1859:2016" ph="..." />
-            <marker date="1519181605780" expanded="true" signature="2061:2234" ph="..." />
-            <marker date="1519181605780" expanded="true" signature="2292:2413" ph="{...}" />
-            <marker date="1519181605780" expanded="true" signature="2459:2762" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
@@ -956,10 +833,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_10_074109_change_int_to_varchar_title_van_settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_16_111745_add_field_status_booking_new.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -967,24 +852,53 @@
     <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_16_103519_create_table_booking_addresses.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
-          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_16_043327_create_table_booking_new.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        <state relative-caret-position="180">
+          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_02_10_074109_change_int_to_varchar_title_van_settings.php">
+    <entry file="file://$PROJECT_DIR$/routes/Backend/BookingNew.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        <state relative-caret-position="170">
+          <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/backend/booking_new/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-438">
+          <caret line="315" column="20" lean-forward="true" selection-start-line="315" selection-start-column="20" selection-end-line="315" selection-end-column="20" />
+          <folding>
+            <element signature="e#11397#13951#0#HTML" expanded="false" />
+            <marker date="1519186155619" expanded="true" signature="1128:2764" ph="..." />
+            <marker date="1519186155619" expanded="true" signature="1128:3098" ph="..." />
+            <marker date="1519186155619" expanded="true" signature="1144:1411" ph="..." />
+            <marker date="1519186155619" expanded="true" signature="1461:1815" ph="..." />
+            <marker date="1519186155619" expanded="true" signature="1859:2016" ph="..." />
+            <marker date="1519186155619" expanded="true" signature="2061:2234" ph="..." />
+            <marker date="1519186155619" expanded="true" signature="2292:2413" ph="{...}" />
+            <marker date="1519186155619" expanded="true" signature="2459:2762" ph="..." />
+            <marker date="1519186155619" expanded="true" signature="2855:3097" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backend/Booking/BookingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1432">
+          <caret line="180" column="12" lean-forward="false" selection-start-line="180" selection-start-column="12" selection-end-line="180" selection-end-column="12" />
+          <folding>
+            <element signature="e#55#83#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
